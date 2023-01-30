@@ -1,0 +1,51 @@
+
+.final-cards{
+    display: none;
+    margin: 7%;
+
+    @media screen and (min-width: 962px){
+        display: block;
+        display: flex;
+        // justify-content: center;
+        flex-direction: row;
+
+        .ctr{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 25px;
+            color:#faf6f0;
+            width: 500px;
+
+          
+            .card-text{
+                height: 265px;
+                padding: 20px;
+
+                h3{
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+              
+            }
+
+            .number-one{
+
+            }
+        }
+
+        // .ctr:nth-child(1){
+        //     .card-text{
+        //         margin-bottom: 23px;
+        //     }
+        // }
+
+        .ctr:nth-child(2){
+            .card-text{
+                margin-bottom: 40px;
+            }
+     
+        }
+    }
+}

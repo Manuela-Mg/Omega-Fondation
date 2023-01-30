@@ -1,0 +1,166 @@
+@font-face {
+    font-family: Norm;
+    src: url("../../public/font/Louis George Cafe.ttf");
+}
+
+@font-face {
+    font-family: Reg;
+    src: url("../../public/font/Coco-Sharp-Bold-trial.ttf");
+}
+
+@font-face {
+    font-family: new;
+    src: url("../../public/font/couture-bld.otf");
+}
+
+@font-face {
+    font-family: kari;
+    src: url("../../public/font/karima-font/KarimaForPersonalUseOnly-ZVPJm.otf");
+}
+
+*{
+    font-family: Norm;
+}
+
+// .header-box{
+//     height: 50px;
+//     width: 100%;
+//     // backdrop-filter: blur(10px);
+//     // background-color: aquamarine;
+// }
+
+.main-text{
+    font-family: Reg;
+}
+
+.svg-box{
+    z-index: 900;
+    /* color: #000000; */
+    /* position: relative; */
+    width: 25px;
+    height: 28px;
+    top: 2.3%;
+    right: 12px;
+}
+
+.parallax{
+    overflow-y: hidden;
+    position: relative;
+    height: 82vh;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    /* max-height: 100vh; */
+    width: 100%;
+}
+
+.title-box {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 39vh;
+    width: 100%;
+    @media screen and (min-width: 750px) {
+        height: 53vh;
+    }
+
+    .hone{
+        color: white;
+        font-family: kari;
+        font-size: 2rem;
+    }
+    .htwo{
+        font-size: 2.8rem;
+        font-family: new;
+        color: white;
+    }
+
+    @media screen and (min-width: 390px) {
+        .hone{
+          
+            font-size: 2.7rem;
+        }
+        .htwo{
+            font-size: 3.5rem;
+        }
+    }
+
+    @media screen and (min-width: 510px) {
+        .hone{
+          
+            font-size: 3.3rem;
+        }
+        .htwo{
+            font-size: 5rem;
+        }
+    }
+
+    @media screen and (min-width: 710px) {
+        .hone{
+          
+            font-size: 3.6rem;
+        }
+        .htwo{
+            font-size: 6rem;
+        }
+    }
+}
+
+.parallax:before {
+    z-index: 1111;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1230px;
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 80%, #6E4738 100%);
+}
+
+
+.backmob{
+    width: 100%;
+    height: 88vh;
+    /* position: relative; */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-Image: url("../../public/pics/oth/backmob.jpg");
+    background-repeat: no-repeat;
+}
+
+
+
+.frontmob{
+    top: 0;
+    width: 100%;
+    height: 88vh;
+    z-index: 3;
+    position: absolute;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    background-position: center;
+    background-Image: url("../../public/pics/oth/frontmob.png");
+    background-repeat: no-repeat;
+}
+
+
+
+@media screen and (min-width: 750px){
+    .backmob{
+        width: 100%;
+        height: 88vh;
+        background-Image: url("../../public/pics/oth/backk.png");
+    }
+    
+    .frontmob{
+        top: 0;
+        width: 100%;
+        height: 88vh;
+        background-Image: url("../../public/pics/oth/frontlarge.png");
+    }
+}
+/* // ne pas utiliser */

@@ -1,0 +1,38 @@
+.mid-box{
+    height: 50px;
+    // position: relative;
+    z-index: -1;
+    width: 100%;
+    // background: cadetblue;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .first-sep{
+        position: absolute;
+        left: 0;
+        // height: 135px;
+        width: 15%;
+        border-bottom: 0.2px solid #eedfd3e1;
+    }
+
+    .ellipse{
+        position: absolute;
+        left: 2%;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        background-color: transparent;
+        border: 0.2px solid #eedfd3e1;
+    }
+
+    .scd-sep{
+        position: absolute;
+        right: 0;
+        // height: 135px;
+        width: 40%;
+        border-bottom: 0.2px solid #eedfd3e1;
+    }
+}

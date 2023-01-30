@@ -1,14 +1,14 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import './Donate.css';
-import Helmet from "react-helmet";
+import './Donate.scss';
 
 const Donations = () => {
+    document.title = "Dons - Omega";
     return (
         <>
-            <Helmet >
-                <title>Dons</title>
-            </Helmet>
+            <section className="don-box">
+               
+            </section>
         </>
     );
 }

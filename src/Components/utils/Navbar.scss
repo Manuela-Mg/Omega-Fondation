@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Norm;
+    src: url("../../../public/font/Louis George Cafe.ttf");
+}
+
+@font-face {
+    font-family: Reg;
+    src: url("../../../public/font/Coco-Sharp-Bold-trial.ttf");
+}
+
+@font-face {
+    font-family: new;
+    src: url("../../../public/font/couture-bld.otf");
+}
+
+@font-face {
+  font-family: kari;
+  src: url("../../../public/font/karima-font/KarimaForPersonalUseOnly-ZVPJm.otf");
+}
+
+@font-face {
+  font-family: lugon;
+  src: url("../../../public/font/lugon/Lugon.otf");
+}
+
+.brand-name {
+  z-index: 100000;
+  color: transparent;
+  font-size: 1.6rem;
+  line-height: 48px;
+  margin-left: 3rem;
+  font-family: kari;
+  font-weight: bold;
+  @media screen and (max-width: 330px) {
+    margin-left: 1.2rem;
+  }
+}
+
+.navbar{
+  // background: #6e473834;
+  background: transparent;
+  position: fixed;
+// backdrop-filter: blur(10px);
+  z-index: 1000000;
+  // box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.222);
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar.active {
+  background: #6e473834;
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.222);
+  transition: all .5s;
+
+  .brand-name{
+    color: rgb(255, 250, 244);
+  }
+}
+
+.navbar ul{
+  float: right;
+  margin-right: 15px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.navbar ul li{
+  display: inline-block;
+  line-height: 53px;
+  margin: 0 25px;
+}
+
+.navbar ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  @media screen and (min-width: 840px) {
+    font-size: 1.10rem;
+  }
+}
+
+a.active, a:hover{
+  font-weight: bold;
+}
+
+.hamburger{
+  z-index: 100000;
+  overflow: hidden;
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  background-color: #203AA300;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 10%;
+  right: 15px;
+  display: none;
+}
+
+@media screen and (max-width: 690px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul{
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    // background: #8462543a;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .navbar ul li{
+    display: block;
+    }
+
+    .li-box {
+      height: 50%;
+      width: 100%;
+    }
+    .navbar ul li a{
+      font-size: 1.3rem;
+    }
+
+  .navigation-menu.expanded{
+    left: 0;
+  }
+
+}

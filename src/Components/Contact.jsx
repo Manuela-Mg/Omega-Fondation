@@ -1,14 +1,15 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import './Donate.css';
-import Helmet from "react-helmet";
+import './Contact.scss';
 
 const Contact = () => {
+    document.title = "Contact - Omega";
     return (
         <>
-            <Helmet >
-                <title>Contacts</title>
-            </Helmet>
+            <div className="contact-box">
+                <h1>CONTACTS</h1>
+            
+            </div>
         </>
     );
 }
