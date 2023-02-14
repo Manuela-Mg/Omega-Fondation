@@ -19,7 +19,7 @@ const About = () => {
             let revealtop = slides[i].getBoundingClientRect().top;
             let revealpoint = -150;
 
-            if(revealtop < windowheight - revealpoint && window.scrollY >= 450) {
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 200) {
                 slides[i].classList.add('active');
             }
             else {
@@ -36,7 +36,7 @@ const About = () => {
             let revealtop = slides[i].getBoundingClientRect().top;
             let revealpoint = 150;
 
-            if(revealtop < windowheight - revealpoint && window.scrollY >= 450) {
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 200) {
                 slides[i].classList.add('active');
             }
             else {
@@ -49,7 +49,7 @@ const About = () => {
         let slides = document.querySelectorAll('.appear');
 
         for(let i = 0; i < slides.length; i++) {
-            if(window.scrollY >= 450) {
+            if(window.scrollY >= 200) {
                 slides[i].classList.add('active');
             }
             else {

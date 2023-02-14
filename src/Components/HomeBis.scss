@@ -44,9 +44,9 @@
 }
 
 .parallax{
-    overflow-y: hidden;
+    overflow: hidden;
     position: relative;
-    height: 82vh;
+    height: 770px;
     // display: flex;
     // justify-content: center;
     // align-items: center;
@@ -108,6 +108,16 @@
             font-size: 6rem;
         }
     }
+
+    // @media screen and (min-width: 710px) and (max-width: 930px) {
+    //     .hone{
+          
+    //         font-size: 3.6rem;
+    //     }
+    //     .htwo{
+    //         font-size: 6rem;
+    //     }
+    // }
 }
 
 .parallax:before {
@@ -117,50 +127,53 @@
     bottom: 0;
     width: 100%;
     height: 1230px;
-    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 80%, #6E4738 100%);
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 75%, #6E4738 100%);
 }
 
+
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 770px;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
 
 .backmob{
-    width: 100%;
-    height: 88vh;
-    /* position: relative; */
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-Image: url("../../public/pics/oth/backmob.jpg");
-    background-repeat: no-repeat;
+    position: fixed;
 }
-
-
 
 .frontmob{
-    top: 0;
-    width: 100%;
-    height: 88vh;
     z-index: 3;
-    position: absolute;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-position: center;
-    background-Image: url("../../public/pics/oth/frontmob.png");
-    background-repeat: no-repeat;
 }
 
+.backordi{
+    display: none;
+}
 
+.frontordi{
+    display: none;
+}
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 930px){
     .backmob{
-        width: 100%;
-        height: 88vh;
-        background-Image: url("../../public/pics/oth/backk.png");
+        display: none;
+    }
+    .frontmob{
+        display: none;
+    }
+
+    .backordi{
+        display: block;
     }
     
-    .frontmob{
-        top: 0;
-        width: 100%;
-        height: 88vh;
-        background-Image: url("../../public/pics/oth/frontlarge.png");
+    .frontordi{
+        display: block;
+        z-index: 3;
     }
 }
 /* // ne pas utiliser */

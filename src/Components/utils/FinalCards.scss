@@ -31,7 +31,56 @@
             }
 
             .number-one{
+                position: absolute;
+                margin-top: -31ch;
+                color: rgba(200, 192, 177, 0.52);
+                margin-left: -4ch;
 
+                p {
+                    font-family: over;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.4em;
+                   
+                }
+            }
+
+            .number-two{
+                // position: absolute;
+                // margin-top: -31ch;
+                text-align: center;
+                color: rgba(200, 192, 177, 0.52);
+                // margin-left: -4ch;
+
+                p {
+                    font-family: over;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.4em;
+                    /* or 20% */
+
+                    
+                }
+            }
+
+            .number-three{
+                position: absolute;
+                margin-top: -31ch;
+                right: 0;
+                color: rgba(200, 192, 177, 0.52);
+                margin-right:10%;
+                // float: right;
+   
+                // margin-right: -31ch;
+
+                p {
+                  
+                    font-family: over;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 5.4em;
+                   
+                }
             }
         }
 
