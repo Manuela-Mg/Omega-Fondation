@@ -1,33 +1,48 @@
 
 .final-cards{
     display: none;
-    margin: 7%;
+    // margin: 7%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+
 
     @media screen and (min-width: 962px){
         display: block;
         display: flex;
-        // justify-content: center;
         flex-direction: row;
+        justify-content: center;
 
         .ctr{
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin: 25px;
+            margin: 15px;
             color:#faf6f0;
             width: 500px;
 
-          
             .card-text{
-                height: 265px;
+                height: 260px;
                 padding: 20px;
-
+                
                 h3{
                     text-align: center;
+                    font-size: 2.7vw;
                     text-transform: uppercase;
                     margin-bottom: 10px;
+
+                    @media screen and (min-width: 1282px){
+                        font-size: 32px;
+                    }
                 }
-              
+                p{
+                    font-size: 1.65vw;
+
+                    @media screen and (min-width: 1082px){
+                        font-size: 1.10rem ;
+                    }
+                }
+                
             }
 
             .number-one{
@@ -41,7 +56,7 @@
                     font-style: normal;
                     font-weight: 400;
                     font-size: 5.4em;
-                   
+
                 }
             }
 
@@ -66,22 +81,21 @@
             .number-three{
                 position: absolute;
                 margin-top: -31ch;
-                right: 0;
+            
+                // margin-top: -31ch;
+                // right: 0;
                 color: rgba(200, 192, 177, 0.52);
-                margin-right:10%;
-                // float: right;
-   
-                // margin-right: -31ch;
+                margin-left:225px;
 
                 p {
-                  
                     font-family: over;
                     font-style: normal;
                     font-weight: 400;
                     font-size: 5.4em;
-                   
+
                 }
             }
+            
         }
 
         // .ctr:nth-child(1){
@@ -92,9 +106,26 @@
 
         .ctr:nth-child(2){
             .card-text{
+                height: 275px;
                 margin-bottom: 40px;
             }
-     
+    
         }
+    }
+    @media screen and (min-width: 1152px){
+        .ctr{
+            width: 300px;
+        }
+      
+    }
+
+    @media screen and (max-width: 1152px){
+        .ctr{
+            .number-three{
+                right: 0;
+                margin-right: 5%;
+            }
+        }
+      
     }
 }

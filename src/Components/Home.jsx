@@ -37,16 +37,12 @@ const Home = () => {
         {/* <div className="intro"> */}
           <section className="parallax">
             {/* <div className="backmob" id="back"></div> */}
-            <img className="backmob" src="./pics/oth/backmob.jpg"></img>
-            <img className="backordi" src="./pics/oth/backk.png"></img>
-
+            <div className="backmob" id="back"></div>
             <div className="title-box" id="title-box">
               <h1 className="hone">Omega</h1>
               <h1 className="htwo">FONDATION</h1>
             </div>
-            <img className="frontmob"  src="./pics/oth/frontmob.png"></img>
-            <img className="frontordi"src="./pics/oth/frontlarge.png"></img>
-
+            <div className="frontmob" id="front"></div>
           </section>
         {/* </div> */}
         <About />

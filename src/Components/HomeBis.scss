@@ -43,29 +43,17 @@
     right: 12px;
 }
 
-.parallax{
-    overflow: hidden;
-    position: relative;
-    height: 770px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    /* max-height: 100vh; */
-    width: 100%;
-}
-
 .title-box {
     position: absolute;
-    top: 0;
     // left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 39vh;
+    height: 350px;
     width: 100%;
     @media screen and (min-width: 750px) {
-        height: 53vh;
+        height: 350px;
     }
 
     .hone{
@@ -120,6 +108,17 @@
     // }
 }
 
+.parallax{
+    overflow: hidden;
+    position: relative;
+    height: 770px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    /* max-height: 100vh; */
+    width: 100%;
+}
+
 .parallax:before {
     z-index: 1111;
     content: "";
@@ -127,53 +126,100 @@
     bottom: 0;
     width: 100%;
     height: 1230px;
+    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 80%, #6E4738 100%);
+}
+
+.blend{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1230px;
     background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 75%, #6E4738 100%);
 }
 
-
-
-.parallax img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 770px;
-    object-fit: cover;
-    pointer-events: none;
+// .parallax img{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 770px;
+//     object-fit: cover;
+//     pointer-events: none;
     
-}
+// }
+
+// .backmob{
+//     position: fixed;
+// }
+
+// .frontmob{
+//     z-index: 3;
+// }
+
+// .backordi{
+//     display: none;
+// }
+
+// .frontordi{
+//     display: none;
+// }
 
 .backmob{
-    position: fixed;
-}
-
+        width: 100%;
+        height: 770px;
+        /* position: relative; */
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        background-Image: url("../../public/pics/oth/backmob.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    
+    
 .frontmob{
+    top: 0;
+    width: 100%;
+    height: 770px;
     z-index: 3;
-}
-
-.backordi{
-    display: none;
-}
-
-.frontordi{
-    display: none;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-Image: url("../../public/pics/oth/frontmob.png");
+    background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 930px){
+    // .backmob{
+    //     display: none;
+    // }
+    // .frontmob{
+    //     display: none;
+    // }
+
+    // .backordi{
+    //     display: block;
+    // }
+    
+    // .frontordi{
+    //     display: block;
+    //     z-index: 3;
+    // }
     .backmob{
-        display: none;
+        width: 100%;
+        height: 770px;
+        background-Image: url("../../public/pics/oth/backk.png");
     }
+        
     .frontmob{
-        display: none;
+        top: 0;
+        width: 100%;
+        height: 770px;
+        background-Image: url("../../public/pics/oth/frontlarge.png");
     }
 
-    .backordi{
-        display: block;
-    }
-    
-    .frontordi{
-        display: block;
-        z-index: 3;
-    }
+    .title-box {
+            height: 450px;
+        }
 }
 /* // ne pas utiliser */

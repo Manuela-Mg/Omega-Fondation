@@ -11,8 +11,21 @@
     background: #6E4738;
     display: block;
     padding: 5%;
+    position: absolute;
+    z-index: 3;
+    top: 769px;
     // justify-content: center;
     // align-items: center;
+
+    a{
+        color: #ebd1ba;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #fff4e9;
+        text-decoration:dotted;
+    }
 
     .slideDown{
         
@@ -83,10 +96,14 @@
         .world{
             // margin-left: 20px;
             width: 250px;
+            @media screen and (min-width: 628px) {
+                width: 300px;
+                // top: -35%;
+            }
         }
         .verse{
             color: #eeeae6;
-            font-size: 0.78rem;
+            font-size: 0.80rem;
             margin-right: 3px;
             margin-left: 7px;
 
@@ -98,23 +115,23 @@
             #sig{
                 font-style: oblique;
                 font-weight: 600;
-               line-height: 15px;
+                line-height: 15px;
             }
 
             @media screen and (min-width: 428px) {
-                font-size: 0.85rem;
+                font-size: 0.92rem;
             }
             @media screen and (min-width: 628px) {
-                font-size: 0.95rem;
+                font-size: 1rem;
                 #majChar {
                     font-size: 3.5rem;
                 }
             }
             @media screen and (min-width: 728px) {
-                font-size: 1rem;
+                font-size: 1.1rem;
             }
             @media screen and (min-width: 928px) {
-                font-size: 1rem;
+                font-size: 1.10rem;
                 #majChar {
                     font-size: 3.8rem;
                 }

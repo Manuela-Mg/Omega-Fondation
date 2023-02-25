@@ -132,7 +132,8 @@ export function Cards() {
                 </div>
                 <div className="card-text reveal" style={{ background: '#886957' }}>
                 
-                    <h3>Des Volontaires</h3>
+                    <h3 style={{marginBottom: -5 }}>Des</h3>
+                    <h3>Volontaires</h3>
                     <p>Association à but non lucratif, nous aidons bénévolement<br></br>
                         comme nous souhaiterions être aidés.<br></br>
                         Vous souhaitez participer?<br></br>
