@@ -1,7 +1,7 @@
 import React from "react";
 import './Mid.scss';
 
-export function Mid() {
+export function Mid({_title}) {
 
     return(
         <>
@@ -10,6 +10,7 @@ export function Mid() {
             </div>
             <div className="ellipse">
             </div>
+            <h2 className="title-style">{_title}</h2>
             <div className="scd-sep">
             </div>
         

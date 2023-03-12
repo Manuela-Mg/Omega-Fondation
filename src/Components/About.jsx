@@ -71,7 +71,7 @@ const About = () => {
                     “Il y a plus de bonheur à donner qu’à recevoir.” »”<br></br>
                      <span id="sig">Actes 20:35</span></p>
                 </section>
-                <Mid/>
+                <Mid _title={"Qui Sommes Nous?"}/>
                 <Cards/>
             </div>
         </>
