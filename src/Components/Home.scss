@@ -49,11 +49,13 @@ src: url("../../public/font/lugon/Lugon.otf");
     src: url("../../public/font/Louis George Cafe.ttf");
 }
 
+:root{
+    background: #462e22;
+}
+
 .home-body{
-    /* overflow-y: scroll; */
-    /* min-height: 100vh; */
     width: 100%;
-    // background: #6E4738;
+    background: #462e22;
 }
 
 .intro{
@@ -71,7 +73,7 @@ src: url("../../public/font/lugon/Lugon.otf");
     position: absolute;
     display: flex;
     width: 100%;
-    top: 10%;
+    top: 0;
     /* background: blue; */
     justify-content: center;
     align-items: center;

@@ -5,13 +5,13 @@ import "./HomeBis.scss";
 import About from "./About";
 // import { ChildP } from "../animation";
 import { Navbar } from "./utils/Navbar";
+import Latest from "./SubComp/Latest";
 // import Carousel from 'react-bootstrap/Carousel';
 // import images from "../images";
 // import ImageSlider from "../ImageSlider";
 
 const Home = () => {
   document.title = "O M E G A";
-  let childArea;
   let omtext;
   window.addEventListener("scroll", function () {
     // childArea = document.getElementById("front");
@@ -46,6 +46,7 @@ const Home = () => {
           </section>
         {/* </div> */}
         <About />
+        
       </div>
       
     </>

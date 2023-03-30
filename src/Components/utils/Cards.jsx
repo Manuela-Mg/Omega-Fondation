@@ -26,136 +26,165 @@ export function Cards() {
     return(
         <>
         <section className="cards-box">
-        
-            <div className="card-text reveal" style={{ background: '#B8A08B' }}>
-            <div className="number-one">
-                <p>01</p>
-            </div>
-                <h3>Une Famille</h3>
-                <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
-                    Ensemble, nous nous unissons pour apporter de l'aide<br></br>
-                    à ce qui en ont le plus besoin.<br></br>
-                </p>
-                
-            </div>
-        
-            <div className="card-text reveal" style={{ background: '#886957' }}>
-            <div className="number-two">
-                <p>02</p>
-            </div>
-                <h3>Des Volontaires</h3>
-                <p>Association à but non lucratif, nous aidons bénévolement<br></br>
-                    comme nous souhaiterions être aidés.<br></br>
-                    Vous souhaitez participer?<br></br>
-                </p>
-                <a href="/Contacts">Rejoignez nous!</a>
-            </div>
-            
-            <div className="card-text reveal" style={{ background: '#B8A08B' }}>
-            <div className="number-three">
-                <p>03</p>
-            </div>
-                <h3>En Mission</h3>
-                <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
-                    <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                    <br></br>Mais plus important, nous offrons de notre personne.</p>
-        
-            </div>
-            
-        </section>
-
-        <section className="cards-ordi">
-            <div className="ctner">
-        <div className="cards-one">
-        
-            <div className="card-text reveal" style={{ background: '#B8A08B' }}>
-            <div className="number-one">
-                <p>01</p>
-            </div>
-                <h3>Une Famille</h3>
-                <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
-                    Ensemble, nous nous unissons pour apporter de l'aide<br></br>
-                    à ce qui en ont le plus besoin.<br></br>
-                </p>
-                
-            </div>
-        </div>
-        
-        <div className="cards-two">
-            <div className="card-text reveal" style={{ background: '#886957' }}>
-            <div className="number-two">
-                <p>02</p>
-            </div>
-                <h3>Des Volontaires</h3>
-                <p>Association à but non lucratif, nous aidons bénévolement<br></br>
-                    comme nous souhaiterions être aidés.<br></br>
-                    Vous souhaitez participer?<br></br>
-                </p>
-                <a href="/Contacts">Rejoignez nous!</a>
-            </div>
-        </div>
-            
-        <div className="cards-three">
-            <div className="card-text reveal" style={{ background: '#B8A08B' }}>
-            <div className="number-three">
-                <p>03</p>
-            </div>
-                <h3>En Mission</h3>
-                <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
-                    <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                    <br></br>Mais plus important, nous offrons de notre personne.</p>
-        
-            </div>
-        </div>
-        </div>
-        </section>
-
-        <section className="final-cards">
-
-            <div className="ctr">
-                <div className="number-one">
-                    <p>01</p>
+            <button className="contr reveal">
+                <div className="img-one"></div>
+                <div className="card-text">
+                    <div className="number-one">
+                        <p>01</p>
+                    </div>
                 </div>
-                <div className="card-text reveal" style={{ background: '#B8A08B' }}>
+                <div className="text-box">
                     <h3>Une Famille</h3>
                     <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
                         Ensemble, nous nous unissons pour apporter de l'aide<br></br>
                         à ce qui en ont le plus besoin.<br></br>
                     </p>
-                    
                 </div>
-            </div>
-        
-            <div className="ctr">
-                <div className="number-two">
-                    <p>02</p>
-                </div>
-                <div className="card-text reveal" style={{ background: '#886957' }}>
+            </button>
                 
-                    <h3 style={{marginBottom: -5 }}>Des</h3>
-                    <h3>Volontaires</h3>
+            <button className="contr reveal">
+                <div className="img-two"></div>
+                <div className="card-text">
+                    <div className="number-two">
+                        <p>02</p>
+                    </div>
+                </div>
+                <div className="text-box">
+                    <h3>En Mission</h3>
+                    <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
+                        <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
+                        <br></br>Mais plus important, nous offrons de notre personne.
+                    </p>
+                </div>
+            </button>
+
+            <button className="contr reveal">
+                <div className="img-three"></div>
+                <div className="card-text">
+                    <div className="number-three">
+                        <p>03</p>
+                    </div>
+                </div>
+                <div className="text-box">
+                    <h3>Des Volontaires</h3>
                     <p>Association à but non lucratif, nous aidons bénévolement<br></br>
                         comme nous souhaiterions être aidés.<br></br>
                         Vous souhaitez participer?<br></br>
                     </p>
                     <a href="/Contacts">Rejoignez nous!</a>
                 </div>
-            </div>
+            </button> 
+        </section>
 
-            <div className="ctr">
-                <div className="number-three">
-                    <p>03</p>
+        <section className="cards-ordi">
+            <div className="ctner">
+                <div className="cards-one">
+                    <button className="contr reveal">
+                        <div className="fcard-text"></div>
+                        <div className="img1-card">
+                            <div className="number-one">
+                                <p>01</p>
+                            </div>
+                        </div>
+                        <div className="text-box">
+                            <h3>Une Famille</h3>
+                            <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
+                                Ensemble, nous nous unissons pour apporter de l'aide<br></br>
+                                à ce qui en ont le plus besoin.<br></br>
+                            </p>
+                        </div>
+                    </button>
+                    
                 </div>
-                <div className="card-text reveal" style={{ background: '#B8A08B' }}>
                 
+                <div className="cards-two">
+                    <button className="contr reveal">
+                        <div className="scard-text"></div>
+                        <div className="img2-card">
+                            <div className="number-two">
+                                <p>02</p>
+                            </div>
+                        </div>
+                        <div className="text-box">
+                            <h3>Des Volontaires</h3>
+                            <p>Association à but non lucratif, nous aidons bénévolement<br></br>
+                                comme nous souhaiterions être aidés.<br></br>
+                                Vous souhaitez participer?<br></br>
+                            </p>
+                            <a href="/Contacts">Rejoignez nous!</a>
+                        </div>
+                    </button>
+                </div>
+            
+                <div className="cards-three">
+                    <button className="contr reveal">
+                        <div className="tcard-text"></div>
+                        <div className="img3-card">
+                            <div className="number-three">
+                                <p>03</p>
+                            </div>
+                        </div>
+                        <div className="text-box">
+                            <h3>En Mission</h3>
+                            <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
+                                <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
+                                <br></br>Mais plus important, nous offrons de notre personne.
+                            </p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section className="final-cards">
+            <button className="ctr reveal">
+                <div className="fcard-text"></div>
+                <div className="img1-card">
+                    <div className="number-one">
+                        <p>01</p>
+                    </div>
+                </div>
+                <div className="text-box">
+                    <h3>Une Famille</h3>
+                    <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
+                        Ensemble, nous nous unissons pour apporter de l'aide<br></br>
+                        à ce qui en ont le plus besoin.<br></br>
+                    </p>
+                </div>
+            </button>
+
+            <button className="ctr reveal">
+                <div className="scard-text"></div>
+                <div className="img2-card">
+                    <div className="number-two">
+                        <p>02</p>
+                    </div>
+                </div>
+                <div className="text-box">
+                    <h3>Des Volontaires</h3>
+                    <p>Association à but non lucratif, nous aidons bénévolement<br></br>
+                        comme nous souhaiterions être aidés.<br></br>
+                        Vous souhaitez participer?<br></br>
+                    </p>
+                    <a href="/Contacts">Rejoignez nous!</a>
+                </div>
+            </button>
+        
+            <button className="ctr reveal">
+                <div className="tcard-text"></div>
+                <div className="img3-card">
+                    <div className="number-three">
+                        <p>03</p>
+                    </div>
+                </div>
+                <div className="text-box">
                     <h3>En Mission</h3>
                     <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
                         <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                        <br></br>Mais plus important, nous offrons de notre personne.</p>
-            
+                        <br></br>Mais plus important, nous offrons de notre personne.
+                    </p>
                 </div>
-            </div>
-            
+            </button>
         </section>
         
         </>

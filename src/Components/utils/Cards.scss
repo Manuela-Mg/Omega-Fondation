@@ -5,28 +5,157 @@
 }
 
 
+@font-face {
+    font-family: kari;
+    src: url("../../../public/font/karima-font/KarimaForPersonalUseOnly-ZVPJm.otf");
+}
+
+
 .cards-box{
-    // overflow: hidden;
-    // position: relative;
-    
-    // height: 500px;
     width: 100%;
     top: 50%;
-    // background: rgb(177, 136, 112);
     // margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .card-text{
-        color:#faf6f0;
-        z-index: 5;
-        
-        // border-radius: 0 10px;
+    .contr{
+        width: 100%;
+        background-color: transparent;
+        // background-color: #faf6f0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+        // margin: 20px;
+    }
+
+    .contr:nth-child(2){
+        margin-bottom: 160px;
+    }
+
+    .text-box{
+        z-index: 7;
+        margin-top: 288px;
+        position: absolute;
         width: 75%;
+        color: #fffbf5;
+
+        @media screen and (min-width: 328px) {
+            font-size: .89rem;
+    
+        }
+
+        @media screen and (min-width: 358px) {
+            font-size: .96rem;
+    
+        }
+
+        @media screen and (min-width: 448px) {
+            width: 350px;
+            margin-bottom: 50px;
+            font-size: 1rem;
+    
+        }
+
+        h3{
+            font-size: 9.5vw;
+            color: #dfd3c2;
+            text-align: center;
+            font-family: kari;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 468px) {
+                font-size: 2.7rem;
+        
+            }
+
+            @media screen and (min-width: 868px) {
+            
+
+            }
+        }
+    }
+
+    .img-one{
+        position: absolute;
+        margin-left: 8%;
+        z-index: 8;
+        height: 286px;
+        width: 75%;
+        border-radius: 50% 50% 0 0;
+        background-Image: url("../../../public/pics/oth/a.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #beb0a3e9;
+
+        @media screen and (min-width: 448px) {
+            width: 350px;
+        
+    
+        }
+    }
+
+    .img-two{
+        position: absolute;
+        margin-left: 8%;
+        z-index: 8;
+        height: 286px;
+        width: 75%;
+        border-radius: 50% 50% 0 0;
+        background-Image: url("../../../public/pics/oth/b.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #beb0a3e9;
+        
+        @media screen and (min-width: 448px) {
+            width: 350px;
+        
+    
+        }
+    }
+
+    .img-three{
+        position: absolute;
+        margin-left: 8%;
+        z-index: 8;
+        height: 286px;
+        width: 75%;
+        border-radius: 50% 50% 0 0;
+        background-Image: url("../../../public/pics/oth/c.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #beb0a3e9;
+
+        @media screen and (min-width: 448px) {
+            width: 350px;
+        
+    
+        }
+    }
+
+    .card-text{
+        // color:#faf6f0;
+        z-index: 5;
+        border-radius: 50% 50% 0 0;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #f8e8da;
+        height: 285px;
+        padding: 15px;
+        // border   -radius: 0 10px;
+        width: 85%;
         margin: 20px;
-        padding: 20px;
-        font-size: .93rem;
+        // font-size: .93rem;
 
         @media screen and (min-width: 358px) {
             margin-bottom: 30px;
@@ -35,13 +164,14 @@
         }
 
         @media screen and (min-width: 448px) {
-            width: 300px;
+            width: 350px;
             margin-bottom: 50px;
             font-size: 1rem;
     
         }
 
     }
+
     .card-text h3{
         font-size: 8vw;
         text-align: center;
@@ -62,7 +192,6 @@
 
     .number-one {
         position: absolute;
-        margin-top: -5ch;
         left: 0;
         margin-left: 10%;
 
@@ -77,14 +206,14 @@
             // text-align: center;
         }
         @media screen and (min-width: 308px) {
-            margin-top: -4ch;
+            margin-top: -0.5ch;
             font-size: 5.5vw;
     
         }
 
         @media screen and (min-width: 538px) {
             margin-left: 12%;
-            margin-top: -3.7ch;
+            margin-top: -1ch;
             font-size: 2rem;
             margin-left: 16%;
     
@@ -97,7 +226,6 @@
 
     .number-two {
         position: absolute;
-        margin-top: -5ch;
         left: 0;
         margin-left: 10%;
 
@@ -113,13 +241,13 @@
         }
 
         @media screen and (min-width: 308px) {
-            margin-top: -4ch;
+            margin-top: -0.9ch;
             font-size: 5.5vw;
     
         }
 
         @media screen and (min-width: 538px) {
-            margin-top: -3.7ch;
+            margin-top: -2ch;
             font-size: 2rem;
             margin-left: 16%;
     
@@ -132,7 +260,6 @@
 
     .number-three {
         position: absolute;
-        margin-top: -5ch;
         left: 0;
         margin-left: 10%;
 
@@ -148,13 +275,13 @@
         }
         
         @media screen and (min-width: 308px) {
-            margin-top: -4ch;
+            margin-top: -0.9ch;
             font-size: 5.5vw;
     
         }
 
         @media screen and (min-width: 538px) {
-            margin-top: -3.7ch;
+            margin-top: -2ch;
             font-size: 2rem;
             margin-left: 16%;
     
@@ -167,33 +294,6 @@
     @media screen and (min-width: 658px){
         display: none;
     }
-    // @media screen and (min-width: 962px){
-    //     flex-direction: row;
-    //     justify-content: center;
-
-    //     .card-text{
-    //         position: relative;
-    //     }
-
-    //     .number-one{
-    //         top: 0;
-    //         // position: absolute;
-    //         // margin-top: -5ch;
-    //         // left: 0;
-    //         // margin-left: 10%;
-    //         // margin-left: 15%;
-            
-    //     }
-    
-    //     .number-two{
-
-    //         // margin-right: 15%;
-    //     }
-    
-    //     .number-three{
-    //         // margin-left: 15%;
-    //     }
-    // }
     
 }
 

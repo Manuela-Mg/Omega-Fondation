@@ -4,18 +4,20 @@
     src: url("../../public/font/persona_2/Persona\ DEMO.otf");
 }
 
-
 .container{
     width: 100%;
-    min-height: 1600px;
-    background: #6E4738;
+    min-height: 2200px;
+    background: #462e22;
     display: block;
-    padding: 5%;
     position: absolute;
     z-index: 3;
     top: 769px;
     // justify-content: center;
     // align-items: center;
+
+    .cards-ctr{
+        padding: 5%;
+    }
 
     a{
         color: #ebd1ba;

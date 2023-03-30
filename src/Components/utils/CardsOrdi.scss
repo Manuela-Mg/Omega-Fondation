@@ -1,36 +1,11 @@
 .cards-one{
     display: none;
-  
-    color:#faf6f0;
-    margin-bottom: 120px;
+    color:#fdf9f4;
+    margin-bottom: 100px;
     // margin: 20px;
     font-size: 1.05rem;
     justify-content: right;
-   
 
-    .card-text{
-        // margin-right: 10px;
-        padding: 20px;
-        // position: relative;
-        width: 220px;
-        right: 0;
-    }
-
-    .card-text h3{
-        // margin: 20px;
-        // padding: 20px;
-       
-        font-size: 1.7rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-
-        @media screen and (min-width: 788px) {
-            
-
-        }
-
-    }
 
     .number-one {
         position: absolute;
@@ -76,33 +51,11 @@
 }
 
 .cards-two{
-    color:#faf6f0;
+    color:#fdf9f4;
     display: none;
     margin-bottom: 120px;
-
     font-size: 1.05rem;
-    
 
-    .card-text h3{
-        // margin: 20px;
-        // padding: 20px;
-        font-size: 1.7rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    
-
-        @media screen and (min-width: 868px) {
-        
-
-        }
-
-    }
-
-    .card-text{
-        width: 220px;
-        padding: 20px;
-    }
 
     .number-two {
         position: absolute;
@@ -144,36 +97,9 @@
 
 .cards-three{
     display: none;
-    color:#faf6f0;
+    color:#fdf9f4;
     font-size: 1.05rem;
     justify-content: right;
-    // width: 300px;
-
-    .card-text h3{
-        // margin: 20px;
-        // padding: 20px;
-        font-size: 1.7rem;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-
-        @media screen and (min-width: 468px) {
-            font-size: 2rem;
-    
-        }
-
-        @media screen and (min-width: 788px) {
-        
-
-        }
-
-    }
-
-    .card-text{
-        padding: 20px;
-        width: 220px;
-        right: 0;
-    }
 
     .number-three {
         position: absolute;
@@ -229,10 +155,172 @@
 
 .ctner{
     min-width: 525px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content:safe;
-    // margin: 40px;
+
+    .contr{
+        background-color: transparent;
+        
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+        // margin: 20px;
+    }
+
+    .contr:nth-child(2){
+        margin-bottom: 160px;
+    }
+
+    .text-box{
+        z-index: 7;
+        margin-top: 345px;
+        position: absolute;
+        width: 300px;
+        color: #fffbf5;
+        font-size: .95rem;
+
+
+        h3{
+            font-size: 9.5vw;
+            color: #dfd3c2;
+            text-align: center;
+            font-family: kari;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @media screen and (min-width: 468px) {
+                font-size: 2.4rem;
+        
+            }
+
+            @media screen and (min-width: 868px) {
+            
+
+            }
+        }
+    }
+
+    .fcard-text{
+        position: absolute;
+        margin-top: 150px;
+        z-index: 25;
+        height: 105px;
+        border-radius: 50%;
+        border-style: solid;
+        margin-left: -8px;
+        border-width: 1px;
+        border-color: transparent #ffe9de  #ffe9de #ffe9de ;
+        transform: rotate3d(1, 1, 1, 15deg);
+        
+        
+        @media screen and (min-width: 448px) {
+            width: 370px;
+        }
+    }
+
+    .scard-text{
+        position: absolute;
+        margin-top: 150px;
+        z-index: 25;
+        height: 105px;
+        border-radius: 50%;
+        border-style: solid;
+        margin-left: 8px;
+        border-width: 1px;
+        border-color: transparent #ffe9de  #ffe9de #ffe9de ;
+        transform: rotate3d(1, 1, 1, -15deg);
+        
+        
+        @media screen and (min-width: 448px) {
+            width: 370px;
+        
+    
+        }
+    }
+
+    .tcard-text{
+        position: absolute;
+        margin-top: 150px;
+        z-index: 25;
+        height: 105px;
+        border-radius: 50%;
+        border-style: solid;
+        margin-left: -8px;
+        border-width: 1px;
+        border-color: transparent #ffe9de  #ffe9de #ffe9de ;
+        transform: rotate3d(1, 1, 1, 15deg);
+        
+        
+        @media screen and (min-width: 448px) {
+            width: 370px;
+        }
+
+    }
+
+    .img1-card{
+        z-index: 5;
+        background-Image: url("../../../public/pics/oth/a.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color:  #c3aa93a4;
+        border-radius: 150px 150px  0 0 ;
+
+        height: 330px;
+        padding: 15px;
+
+        @media screen and (min-width: 448px) {
+            width: 310px;
+        }
+
+    }
+
+    .img2-card{
+        z-index: 5;
+        background-Image: url("../../../public/pics/oth/b.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color: #ba9581da;
+        border-radius:150px 150px  0 0 ;
+
+        height: 330px;
+        padding: 15px;
+
+
+        @media screen and (min-width: 448px) {
+            width: 310px;
+            margin-bottom: 10px;
+
+    
+        }
+
+    }
+
+    .img3-card{
+        z-index: 5;
+        background-Image: url("../../../public/pics/oth/c.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-width: 1px;
+        border-style:solid;
+        border-color:  #c3aa93a4;
+        border-radius: 150px 150px  0 0 ;
+
+        height: 330px;
+        padding: 15px;
+
+        @media screen and (min-width: 448px) {
+            width: 310px;
+            margin-bottom: 60px;
+        }
+
+
+    }
+
 
     .number-one{
         margin-left: 10%;
@@ -266,27 +354,6 @@
             margin-left: 15%;
         }
 
-        .card-text h3{
-            font-size: 1.8rem;
-    
-        }
-
-        .card-text{
-            width: 250px;
-        }
-
-        // .cards-one .card-text{
-        //     margin-left: 20px;
-        // }
-
-        // .cards-two .card-text{
-        //     margin-right: 20px;
-        // }
-
-        // .cards-one .card-text{
-        //     margin-left: 20px;
-        // }
-    
     }
 
 }
