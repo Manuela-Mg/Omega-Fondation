@@ -4,29 +4,29 @@ import './FinalCards.scss';
 import './CardsOrdi.scss';
 
 export function Cards() {
-    window.addEventListener("scroll", reveal);
+    window.addEventListener("scroll", slideUp);
 
-    function reveal() {
-        let reveals = document.querySelectorAll('.reveal');
+    function slideUp() {
+        let slides = document.querySelectorAll('.slideUp');
 
-        for(let i = 0; i < reveals.length; i++) {
+        for(let i = 0; i < slides.length; i++) {
             let windowheight = window.innerHeight;
-            let revealtop = reveals[i].getBoundingClientRect().top;
+            let revealtop = slides[i].getBoundingClientRect().top;
             let revealpoint = 150;
 
-            if(revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 200) {
+                slides[i].classList.add('active');
             }
             else {
-                reveals[i].classList.remove('active');
+                slides[i].classList.remove('active');
             }
         }
-    };
+    }
 
     return(
         <>
         <section className="cards-box">
-            <button className="contr reveal">
+            <button className="contr slideUp">
                 <div className="img-one"></div>
                 <div className="card-text">
                     <div className="number-one">
@@ -42,7 +42,7 @@ export function Cards() {
                 </div>
             </button>
                 
-            <button className="contr reveal">
+            <button className="contr slideUp">
                 <div className="img-two"></div>
                 <div className="card-text">
                     <div className="number-two">
@@ -58,7 +58,7 @@ export function Cards() {
                 </div>
             </button>
 
-            <button className="contr reveal">
+            <button className="contr slideUp">
                 <div className="img-three"></div>
                 <div className="card-text">
                     <div className="number-three">
@@ -79,7 +79,7 @@ export function Cards() {
         <section className="cards-ordi">
             <div className="ctner">
                 <div className="cards-one">
-                    <button className="contr reveal">
+                    <button className="contr slideUp">
                         <div className="fcard-text"></div>
                         <div className="img1-card">
                             <div className="number-one">
@@ -98,7 +98,7 @@ export function Cards() {
                 </div>
                 
                 <div className="cards-two">
-                    <button className="contr reveal">
+                    <button className="contr slideUp">
                         <div className="scard-text"></div>
                         <div className="img2-card">
                             <div className="number-two">
@@ -117,7 +117,7 @@ export function Cards() {
                 </div>
             
                 <div className="cards-three">
-                    <button className="contr reveal">
+                    <button className="contr slideUp">
                         <div className="tcard-text"></div>
                         <div className="img3-card">
                             <div className="number-three">
@@ -137,7 +137,7 @@ export function Cards() {
         </section>
 
         <section className="final-cards">
-            <button className="ctr reveal">
+            <button className="ctr slideUp">
                 <div className="fcard-text"></div>
                 <div className="img1-card">
                     <div className="number-one">
@@ -153,7 +153,7 @@ export function Cards() {
                 </div>
             </button>
 
-            <button className="ctr reveal">
+            <button className="ctr slideUp">
                 <div className="scard-text"></div>
                 <div className="img2-card">
                     <div className="number-two">
@@ -170,7 +170,7 @@ export function Cards() {
                 </div>
             </button>
         
-            <button className="ctr reveal">
+            <button className="ctr slideUp">
                 <div className="tcard-text"></div>
                 <div className="img3-card">
                     <div className="number-three">

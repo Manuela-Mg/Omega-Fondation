@@ -5,17 +5,21 @@
 }
 
 .container{
+    position: absolute;
     width: 100%;
     min-height: 2200px;
     background: #462e22;
-    display: block;
-    position: absolute;
+    overflow-x: hidden;
+
+
+    // display: block;
     z-index: 3;
     top: 769px;
     // justify-content: center;
     // align-items: center;
 
     .cards-ctr{
+
         padding: 5%;
     }
 
@@ -96,6 +100,8 @@
         }
         
         .world{
+            overflow-x: hidden;
+
             // margin-left: 20px;
             width: 250px;
             @media screen and (min-width: 628px) {
@@ -108,6 +114,7 @@
             font-size: 0.80rem;
             margin-right: 3px;
             margin-left: 7px;
+            overflow-x: hidden;
 
             #majChar {
                 font-size: 2.5rem;
@@ -141,4 +148,5 @@
             
         }
     }
+    
 }

@@ -1,4 +1,4 @@
-const images = [{
+export const images = [{
     id: 1,
     src: "./pics/first.jpg",
     alt: "Image 1"
@@ -14,4 +14,3 @@ const images = [{
     alt: "Image 3"
 }
 ];
-export default images;

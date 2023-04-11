@@ -4,6 +4,7 @@ import './About.scss';
 import { Cards } from "./utils/Cards";
 import { Mid } from "./utils/Mid";
 import Latest from "./SubComp/Latest";
+import Galeria from "./SubComp/Galeria";
 // import { ChildP } from "../animation";
 // import Helmet from "react-helmet";
 

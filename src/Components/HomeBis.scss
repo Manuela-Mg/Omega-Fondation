@@ -9,8 +9,8 @@
 }
 
 @font-face {
-    font-family: new;
-    src: url("../../public/font/couture-bld.otf");
+    font-family: anew;
+    src: url("../../public/font/kenoky-light-font/KenokyLight-3zezL.ttf");
 }
 
 @font-face {
@@ -18,16 +18,19 @@
     src: url("../../public/font/karima-font/KarimaForPersonalUseOnly-ZVPJm.otf");
 }
 
+@font-face {
+    font-family: over;
+    src: url("../../public/font/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+    font-family: keno;
+    src: url("../../public/font/karima-font/KarimaForPersonalUseOnly-ZVPJm.otf");
+}
+
 *{
     font-family: Norm;
 }
-
-// .header-box{
-//     height: 50px;
-//     width: 100%;
-//     // backdrop-filter: blur(10px);
-//     // background-color: aquamarine;
-// }
 
 .main-text{
     font-family: Reg;
@@ -35,8 +38,6 @@
 
 .svg-box{
     z-index: 900;
-    /* color: #000000; */
-    /* position: relative; */
     width: 25px;
     height: 28px;
     top: 2.3%;
@@ -45,7 +46,6 @@
 
 .title-box {
     position: absolute;
-    // left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,6 @@
 
     @media screen and (min-width: 390px) {
         .hone{
-          
             font-size: 2.7rem;
         }
         .htwo{
@@ -79,7 +78,7 @@
 
     @media screen and (min-width: 510px) {
         .hone{
-          
+
             font-size: 3.3rem;
         }
         .htwo{
@@ -89,7 +88,6 @@
 
     @media screen and (min-width: 710px) {
         .hone{
-          
             font-size: 3.6rem;
         }
         .htwo{
@@ -97,25 +95,125 @@
         }
     }
 
-    // @media screen and (min-width: 710px) and (max-width: 930px) {
-    //     .hone{
-          
-    //         font-size: 3.6rem;
-    //     }
-    //     .htwo{
-    //         font-size: 6rem;
-    //     }
-    // }
+}
+
+.ctr-don{
+    position: absolute;
+    top: 360px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-direction: column;
+    z-index: 1222;
+    height: 250px;
+    width: 100%;
+    // background-color: antiquewhite;
+    @media screen and (min-width: 930px){
+        top: 400px;
+    }
+}
+
+.donate-box{
+    color: rgb(255, 252, 247);
+    // margin-left: -15px;
+    h2{
+        font-size: 1.25rem;
+    }
+    span{
+        color: #feebd2;
+        font-family: actu;
+        font-style: italic;
+    }
+    p{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: .84rem;
+    }
+    a{
+        color: #fff8f4;
+        border-style: solid;
+        border-width: 0 0 0 2px;
+        border-color: rgb(239, 216, 196);
+        border-radius: 20px;
+        padding: 10px;
+        font-family: reg;
+        font-size: .79rem;
+    }
+    a:hover{
+        color: #fff3e2;
+        border-width: 0 0 2px;
+    }
+    @media screen and (min-width: 390px){
+        margin-left: -135px;
+        h2{
+            font-size: 1.35rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+        a{
+            font-size: .89rem;
+        }
+    }
+    @media screen and (min-width: 510px){
+        margin-left: -280px;
+        h2{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+        a{
+            font-size: .9rem;
+        }
+    }
+    @media screen and (min-width: 710px){
+        margin-left: -370px;
+        h2{
+            font-size: 1.35rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+        a{
+            font-size: .89rem;
+        }
+    }
+
+    @media screen and (min-width: 930px){
+        margin-left: 0px;
+        h2{
+            font-size: 1.45rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        a{
+            font-size: .95rem;
+        }
+    }
+
+    @media screen and (min-width: 1230px){
+        h2{
+            font-size: 1.65rem;
+        }
+        p{
+            font-size: 1.15rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }
+    
+    // background-color: #462e22;
 }
 
 .parallax{
     overflow: hidden;
     position: relative;
     height: 770px;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    /* max-height: 100vh; */
+
     width: 100%;
 }
 
@@ -128,41 +226,6 @@
     height: 1230px;
     background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #432b22aa 80%, #462e22 100%);
 }
-
-.blend{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 1230px;
-    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #6E4738AA 75%, #6E4738 100%);
-}
-
-// .parallax img{
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 770px;
-//     object-fit: cover;
-//     pointer-events: none;
-    
-// }
-
-// .backmob{
-//     position: fixed;
-// }
-
-// .frontmob{
-//     z-index: 3;
-// }
-
-// .backordi{
-//     display: none;
-// }
-
-// .frontordi{
-//     display: none;
-// }
 
 .backmob{
         width: 100%;
