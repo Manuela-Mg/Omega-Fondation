@@ -118,7 +118,7 @@
 
             #majChar {
                 font-size: 2.5rem;
-                font-family: perso;
+                font-family: person;
             }
 
             #sig{
@@ -128,19 +128,19 @@
             }
 
             @media screen and (min-width: 428px) {
-                font-size: 0.92rem;
+                font-size: 0.83rem;
             }
             @media screen and (min-width: 628px) {
-                font-size: 1rem;
+                font-size: .86rem;
                 #majChar {
                     font-size: 3.5rem;
                 }
             }
             @media screen and (min-width: 728px) {
-                font-size: 1.1rem;
+                font-size: .92rem;
             }
             @media screen and (min-width: 928px) {
-                font-size: 1.10rem;
+                font-size: 1rem;
                 #majChar {
                     font-size: 3.8rem;
                 }
