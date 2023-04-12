@@ -62,10 +62,9 @@ const About = () => {
 
     return (
         <>
-        
             <div className="container">
                 <div className="cards-ctr">
-                    <section className="verse-box">
+                    <section className="verse-box" id="APropos">
                     <img src="./pics/oth/world.png" className="world slideDown" alt="planet"></img>
                     <div className="separator appear"></div>
                     <p className="verse slideLeft">“<span id="majChar">J</span>e vous l’ai toujours montré: <br></br>

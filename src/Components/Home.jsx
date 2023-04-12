@@ -12,21 +12,40 @@ import { Navbar } from "./utils/Navbar";
 const Home = () => {
   document.title = "O M E G A";
   let omtext;
-  let dontext;
+  // let dontext;
   window.addEventListener("scroll", function () {
     // childArea = document.getElementById("front");
     omtext = document.getElementById("title-box");
-    dontext = document.getElementById("donate-box");
+    // dontext = document.getElementById("donate-box");
     let value = window.scrollY;
-    let donvalue = window.scrollY;
+    // let donvalue = window.scrollY;
     // value += 130;
 
     // childArea.style.top = value * -1 + "px";
     omtext.style.top = value * 1.5 + "px";
-    dontext.style.left = donvalue * 0.8 + "px";
+    // dontext.style.left = donvalue * -0.8 + "px";
     // document.getElementById("back").style.top = value * 0.8 + "px";
     
   });
+
+  window.addEventListener("scroll", slideRight);
+
+    function slideRight() {
+        let slides = document.querySelectorAll('.slideRight');
+
+        for(let i = 0; i < slides.length; i++) {
+            let windowheight = window.innerHeight;
+            let revealtop = slides[i].getBoundingClientRect().top;
+            let revealpoint = -250;
+
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 3) {
+                slides[i].classList.add('active');
+            }
+            else {
+                slides[i].classList.remove('active');
+            }
+        }
+    }
 
   return (
     <>
@@ -43,14 +62,14 @@ const Home = () => {
               <h1 className="hone">Omega</h1>
               <h1 className="htwo">FONDATION</h1>
             </div>
-            <div className="ctr-don" id="donate-box">
+            <div className="ctr-don slideRight">
               <div className="donate-box">
                 <h2>Aide un <span>Orphelin</span></h2>
                 <h2>Secourt un <span>Démuni</span></h2>
                 <p>Donne de Toi avec Nous,<br></br>
                     Pour le peuple et par le Peuple.
                 </p>
-                <a href="Donate">Je donne!</a>
+                <a href="https://www.paypal.com/paypalme/FondationOmega?fbclid=PAAabLbCIHkvMcHMaefyxmYCwxof1iyTtM3ijEMrmttAK8Nu1JqID18iT1440">Je donne!</a>
               </div>
             </div>
 

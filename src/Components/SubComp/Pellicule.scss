@@ -1,0 +1,140 @@
+.pell-box{
+  color: #2e201a;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(244, 242, 240);
+  @media screen and (max-width: 770px) {
+    .rec-box{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.rec-box{
+  z-index: 4;
+}
+
+@font-face {
+  font-family: albra;
+  src: url("../../../public/font/albra/ALBRA.ttf");
+}
+
+@font-face {
+  font-family: ava;
+  src: url("../../../public/font/ava-font/Ava-EaRRg.ttf");
+}
+
+@font-face {
+  font-family: lighter;
+  src: url("../../../public/font/Lightersdemo-z8p30.otf");
+}
+
+@font-face {
+  font-family: ama;
+  src: url("../../../public/font//Amagro.ttf");
+}
+
+@font-face {
+  font-family: person;
+  src: url("../../../public/font/persona_2/Persona\ DEMO.otf");
+}
+
+.active-thumbnail {
+  border: #d3b19c solid 3px !important;
+}
+
+a.prev {
+  visibility: hidden !important;
+}
+
+a.next {
+  visibility: hidden !important;
+}
+
+@media screen and (min-width: 770px) {
+  .text-pell{
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+  .box div:nth-child(1){
+    // max-height: 750px !important;
+    height: 400px !important;
+  }
+  
+}
+
+@media screen and (min-width: 770px) {
+  .box {
+    max-height: 500px !important;
+  }
+  
+}
+
+.box{
+  border-radius: 30px;
+  padding: 5px 0 !important;
+  border-style: solid !important;
+  border-width: 3px 0 0  !important;
+  border-color: rgba(87, 72, 66, 0.551) !important;
+}
+
+.deco-box{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  padding-top: -32px;
+  overflow: hidden;
+  color: #837d7938;
+  text-align: center;
+  p{
+    font-family: albra;
+    font-size: 140px;
+    margin-bottom: 55px;
+  }
+  @media screen and (min-width: 770px) {
+    p{
+      font-size: 340px;
+    }
+
+  }
+
+
+  @media screen and (min-width: 1770px) {
+    p{
+      font-size: 540px;
+    }
+
+  }
+}
+
+.thumbnails img{
+  border-radius: 20ch;
+}
+
+.h-text{
+  padding-top: 20px;
+  font-family: over;
+}
+
+.text-pell{
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 10px;
+  h3{
+    margin-bottom: 10px;
+  }
+  span{
+    font-family: keno;
+  }
+  @media screen and (max-width: 470px) {
+    p{
+      font-size: 0.95em;
+    }
+  }
+  padding-bottom: 20px;
+}

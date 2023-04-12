@@ -5,9 +5,12 @@ import './CardsOrdi.scss';
 
 export function Cards() {
     window.addEventListener("scroll", slideUp);
+    window.addEventListener("scroll", cslideUp);
+    window.addEventListener("scroll", cslideRight);
+    window.addEventListener("scroll", cslideLeft);
 
-    function slideUp() {
-        let slides = document.querySelectorAll('.slideUp');
+    function cslideUp() {
+        let slides = document.querySelectorAll('.cslideUp');
 
         for(let i = 0; i < slides.length; i++) {
             let windowheight = window.innerHeight;
@@ -22,11 +25,59 @@ export function Cards() {
             }
         }
     }
+    function slideUp() {
+        let slides = document.querySelectorAll('.slideUp');
+
+        for(let i = 0; i < slides.length; i++) {
+            let windowheight = window.innerHeight;
+            let revealtop = slides[i].getBoundingClientRect().top;
+            let revealpoint = 350;
+
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 300) {
+                slides[i].classList.add('active');
+            }
+            else {
+                slides[i].classList.remove('active');
+            }
+        }
+    }
+    function cslideLeft() {
+        let slides = document.querySelectorAll('.cslideLeft');
+
+        for(let i = 0; i < slides.length; i++) {
+            let windowheight = window.innerHeight;
+            let revealtop = slides[i].getBoundingClientRect().top;
+            let revealpoint = 350;
+
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 400) {
+                slides[i].classList.add('active');
+            }
+            else {
+                slides[i].classList.remove('active');
+            }
+        }
+    }
+    function cslideRight() {
+        let slides = document.querySelectorAll('.cslideRight');
+
+        for(let i = 0; i < slides.length; i++) {
+            let windowheight = window.innerHeight;
+            let revealtop = slides[i].getBoundingClientRect().top;
+            let revealpoint = -350;
+
+            if(revealtop < windowheight - revealpoint && window.scrollY >= 300) {
+                slides[i].classList.add('active');
+            }
+            else {
+                slides[i].classList.remove('active');
+            }
+        }
+    }
 
     return(
         <>
         <section className="cards-box">
-            <button className="contr slideUp">
+            <button className="contr cslideUp">
                 <div className="img-one"></div>
                 <div className="card-text">
                     <div className="number-one">
@@ -42,7 +93,7 @@ export function Cards() {
                 </div>
             </button>
                 
-            <button className="contr slideUp">
+            <button className="contr cslideUp">
                 <div className="img-two"></div>
                 <div className="card-text">
                     <div className="number-two">
@@ -58,7 +109,7 @@ export function Cards() {
                 </div>
             </button>
 
-            <button className="contr slideUp">
+            <button className="contr cslideUp">
                 <div className="img-three"></div>
                 <div className="card-text">
                     <div className="number-three">
@@ -78,8 +129,8 @@ export function Cards() {
 
         <section className="cards-ordi">
             <div className="ctner">
-                <div className="cards-one">
-                    <button className="contr slideUp">
+                <div className="cards-one cslideLeft">
+                    <button className="contr">
                         <div className="fcard-text"></div>
                         <div className="img1-card">
                             <div className="number-one">
@@ -97,8 +148,8 @@ export function Cards() {
                     
                 </div>
                 
-                <div className="cards-two">
-                    <button className="contr slideUp">
+                <div className="cards-two cslideRight">
+                    <button className="contr">
                         <div className="scard-text"></div>
                         <div className="img2-card">
                             <div className="number-two">
@@ -116,8 +167,8 @@ export function Cards() {
                     </button>
                 </div>
             
-                <div className="cards-three">
-                    <button className="contr slideUp">
+                <div className="cards-three cslideLeft">
+                    <button className="contr">
                         <div className="tcard-text"></div>
                         <div className="img3-card">
                             <div className="number-three">
@@ -137,7 +188,7 @@ export function Cards() {
         </section>
 
         <section className="final-cards">
-            <button className="ctr slideUp">
+            <button className="ctr cslideRight">
                 <div className="fcard-text"></div>
                 <div className="img1-card">
                     <div className="number-one">
@@ -170,7 +221,7 @@ export function Cards() {
                 </div>
             </button>
         
-            <button className="ctr slideUp">
+            <button className="ctr cslideLeft">
                 <div className="tcard-text"></div>
                 <div className="img3-card">
                     <div className="number-three">

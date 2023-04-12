@@ -6,6 +6,78 @@ import './Latest.scss';
 class Latest extends React.Component {
 
     render () {
+        window.addEventListener("scroll", lslideRight);
+        window.addEventListener("scroll", lslideLeft);
+        window.addEventListener("scroll", lslideUp);
+        window.addEventListener("scroll", lslideDown);
+        
+
+        function lslideLeft() {
+            let slides = document.querySelectorAll('.lslideLeft');
+    
+            for(let i = 0; i < slides.length; i++) {
+                let windowheight = window.innerHeight;
+                let revealtop = slides[i].getBoundingClientRect().top;
+                let revealpoint = 150;
+    
+                if(revealtop < windowheight - revealpoint && window.scrollY >= 200) {
+                    slides[i].classList.add('active');
+                }
+                else {
+                    slides[i].classList.remove('active');
+                }
+            }
+        }
+        function lslideRight() {
+            let slides = document.querySelectorAll('.lslideRight');
+    
+            for(let i = 0; i < slides.length; i++) {
+                let windowheight = window.innerHeight;
+                let revealtop = slides[i].getBoundingClientRect().top;
+                let revealpoint = -150;
+    
+                if(revealtop < windowheight - revealpoint && window.scrollY >= 200) {
+                    slides[i].classList.add('active');
+                }
+                else {
+                    slides[i].classList.remove('active');
+                }
+            }
+        }
+        function lslideUp() {
+            let slides = document.querySelectorAll('.lslideUp');
+    
+            for(let i = 0; i < slides.length; i++) {
+                let windowheight = window.innerHeight;
+                let revealtop = slides[i].getBoundingClientRect().top;
+                let revealpoint = 150;
+    
+                if(revealtop < windowheight - revealpoint && window.scrollY >= 50) {
+                    slides[i].classList.add('active');
+                }
+                else {
+                    slides[i].classList.remove('active');
+                }
+            }
+        }
+        function lslideDown() {
+            let slides = document.querySelectorAll('.lslideDown');
+    
+            for(let i = 0; i < slides.length; i++) {
+                let windowheight = window.innerHeight;
+                let revealtop = slides[i].getBoundingClientRect().top;
+                let revealpoint = -150;
+    
+                if(revealtop < windowheight - revealpoint && window.scrollY >= 140) {
+                    slides[i].classList.add('active');
+                }
+                else {
+                    slides[i].classList.remove('active');
+                }
+            }
+        }
+
+
         return (
             <section className="latest-box">
                 <div className="ctr reveal">
@@ -21,7 +93,7 @@ class Latest extends React.Component {
                         <h2>VISITATION</h2>
                         <h2>D<span>'</span>HOPITAUX</h2>
                     </div>
-                    <div className="first-ctr">
+                    <div className="first-ctr lslideUp">
                         <div className="circular-line"></div>
                         <div className="scd-line"></div>
 
@@ -36,17 +108,17 @@ class Latest extends React.Component {
 
                     </div>
 
-                    <div className="img-first">
+                    <div className="img-first lslideDown">
                     </div>
 
                     <div className="see-box">
                         <button className="see-more">
                         </button>
-                        <a href="/Galerie" className="see">Voir Plus</a>
+                        <a href="/Pellicule" className="see">Voir Plus</a>
                     </div>
 
 
-                    <div className="scd-ctr">
+                    <div className="scd-ctr lslideRight">
                         <div className="circular-line2"></div>
                         <div className="scd-line2"></div>
 

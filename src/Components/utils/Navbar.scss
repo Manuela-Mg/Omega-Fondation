@@ -49,6 +49,7 @@
 }
 
 .navbar.active {
+  backdrop-filter: blur(10px);
   background: #462e2234;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.222);
   transition: all .5s;
@@ -60,7 +61,7 @@
 
 .navbar ul{
   float: right;
-  margin-right: 15px;
+  margin-right: 45px;
   overflow: hidden;
   height: 50px;
 }
@@ -72,15 +73,42 @@
 }
 
 .navbar ul li a{
-  color: rgb(255, 255, 255);
   font-size: 1rem;
   @media screen and (min-width: 840px) {
     font-size: 1.10rem;
   }
 }
 
-a.active, a:hover{
+.navbar ul li a{
+  text-decoration: none;
+  color: rgba(248, 248, 255, 0.784);
+  position: relative;
+}
+
+
+.navbar ul li a:hover{
+  color: rgb(255, 255, 255);
+}
+
+.navbar ul li a.active{
+  color: rgb(255, 255, 255);
   font-weight: bold;
+}
+
+.navbar ul li a::after{
+  content: '';
+  background: whitesmoke;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+.navbar ul li a:hover::after{
+  width: 50%;
 }
 
 .hamburger{

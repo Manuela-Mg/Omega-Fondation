@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 export function Navbar() {
@@ -24,13 +25,13 @@ export function Navbar() {
             <button className="hamburger"
             onClick={() => {
                 setIsNavExpanded(!isNavExpanded);
-              }}
+            }}
             alt="menu">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
                 viewBox="0 0 20 20"
-                 fill="white"
+                fill="white"
             >
                 <path
                 fillRule="evenodd"
@@ -41,17 +42,14 @@ export function Navbar() {
             </button>
 
             <ul className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
             }>
                 <div className="li-box">
                     <li>
                         <a className="active" href="/">Accueil</a>
                     </li>
                     <li>
-                        <a href="/About">A Propos</a>
-                    </li>
-                    <li>
-                        <a href="/Dons">Dons</a>
+                        <a href="https://www.paypal.com/paypalme/FondationOmega?fbclid=PAAabLbCIHkvMcHMaefyxmYCwxof1iyTtM3ijEMrmttAK8Nu1JqID18iT1440">Dons</a>
                     </li>
                     <li>
                         <a href="/Contacts">Contacts</a>
@@ -59,5 +57,5 @@ export function Navbar() {
                 </div>
             </ul>
         </nav>
-      )
+    )
 }

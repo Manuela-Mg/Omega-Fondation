@@ -25,12 +25,12 @@
         // background-color: #faf6f0;
         display: flex;
         justify-content: center;
-        margin-bottom: 140px;
+        margin-bottom: 170px;
         // margin: 20px;
     }
 
     .contr:nth-child(2){
-        margin-bottom: 160px;
+        margin-bottom: 180px;
     }
 
     .text-box{
@@ -41,12 +41,12 @@
         color: #fffbf5;
 
         @media screen and (min-width: 328px) {
-            font-size: .89rem;
+            font-size: .83rem;
     
         }
 
         @media screen and (min-width: 358px) {
-            font-size: .96rem;
+            font-size: .93rem;
     
         }
 
@@ -297,17 +297,59 @@
     }
 }
 
-// .slideUp{
-//     position: relative;
-//     transform: translateY(150px);
-//     opacity: 0;
-//     transition: all 2s ease;
-// }
+.slideUp{
+    // position: relative;
+    width: 100%;
+    margin-top :350px;
+    opacity: 0;
+    transition: all 2s ease;
+}
 
-// .slideUp.active{
-//     transform: translateY(0px);
-//     opacity: 1;
-// }
+.slideUp.active{
+    width: 100%;
+    margin-top: 0;
+    opacity: 1;
+}
+
+.cslideUp{
+    // position: relative;
+    width: 100%;
+    margin-top :150px;
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.cslideUp.active{
+    width: 100%;
+    margin-top: 0;
+    opacity: 1;
+}
+
+.cslideLeft{
+        
+    transform: translateX(350px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.cslideLeft.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cslideRight{
+        
+    position: relative;
+    transform: translateX(-350px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.cslideRight.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 
 //

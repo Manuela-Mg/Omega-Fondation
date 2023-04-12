@@ -9,6 +9,10 @@ const Galeria = () => {
     <div className="img3"></div>,
     <div className="img4"></div>,
     <div className="img5"></div>,
+    <div className="img6"></div>,
+    <div className="img7"></div>,
+    <div className="img8"></div>,
+    <div className="img9"></div>,
     ];
 
     return (

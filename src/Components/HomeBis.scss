@@ -44,6 +44,25 @@
     right: 12px;
 }
 
+.active, .dot:hover {
+    background-color: #71717100 !important;
+}
+  
+
+.slideRight{
+        
+    position: relative;
+    transform: translateX(0x);
+    opacity: 1;
+    transition: all 2s ease;
+}
+
+.slideRight.active{
+    transform: translateX(-250px);
+    opacity: 0;
+}
+
+
 .title-box {
     position: absolute;
     display: flex;
