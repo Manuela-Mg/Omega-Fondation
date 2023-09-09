@@ -8,6 +8,7 @@ import Donations from "./Components/Donate";
 import Galeria from "./Components/SubComp/Galeria";
 import Pellicule from "./Components/SubComp/Pellicule";
 import About from "./Components/About";
+import Articles from "./Components/Articles";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
 
         <Route path="/Dons" component={Donations} />
 
-        <Route  path="/Contacts" component={Contact} />
+        <Route  path="/Contact" component={Contact} />
+
+        <Route  path="/Articles" component={Articles} />
 
         <Route  path="/Galerie" component={Galeria} />
 

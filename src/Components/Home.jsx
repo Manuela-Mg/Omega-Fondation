@@ -60,12 +60,12 @@ const Home = () => {
             <div className="backmob" id="back"></div>
             <div className="title-box" id="title-box">
               <h1 className="hone">Omega</h1>
-              <h1 className="htwo">FONDATION</h1>
+              <h1 className="htwo">ASSOCIATION</h1>
             </div>
             <div className="ctr-don slideRight">
               <div className="donate-box">
                 <h2>Aide un <span>Orphelin</span></h2>
-                <h2>Secourt un <span>Démuni</span></h2>
+                <h2>Secours un <span>Démuni</span></h2>
                 <p>Donne de Toi avec Nous,<br></br>
                     Pour le peuple et par le Peuple.
                 </p>

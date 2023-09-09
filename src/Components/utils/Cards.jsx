@@ -88,7 +88,7 @@ export function Cards() {
                     <h3>Une Famille</h3>
                     <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
                         Ensemble, nous nous unissons pour apporter de l'aide<br></br>
-                        à ce qui en ont le plus besoin.<br></br>
+                        à ceux qui en ont le plus besoin.<br></br>
                     </p>
                 </div>
             </button>
@@ -141,7 +141,7 @@ export function Cards() {
                             <h3>Une Famille</h3>
                             <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
                                 Ensemble, nous nous unissons pour apporter de l'aide<br></br>
-                                à ce qui en ont le plus besoin.<br></br>
+                                à ceux qui en ont le plus besoin.<br></br>
                             </p>
                         </div>
                     </button>
@@ -199,7 +199,7 @@ export function Cards() {
                     <h3>Une Famille</h3>
                     <p>Ce qui nous réunit? Le même battement de coeur: tendre la main aux autres.<br></br>
                         Ensemble, nous nous unissons pour apporter de l'aide<br></br>
-                        à ce qui en ont le plus besoin.<br></br>
+                        à ceux qui en ont le plus besoin.<br></br>
                     </p>
                 </div>
             </button>

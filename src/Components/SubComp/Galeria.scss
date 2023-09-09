@@ -205,55 +205,98 @@
   }
 }
 
+.react-3d-carousel {
+
+  position: relative;
+  
+
+}
+
+
 @media screen and (min-width: 960px) {
+  
+  // .react-3d-carousel .slider-container {
+
+  //   position: absolute;
+  //   display: flex !important;
+  //   // align-items: center !important;
+  //   justify-content: center !important;
+  //   left: 0 !important;
+  //   top: 0%;
+  //   width: 100% !important;
+  //   margin: -0px auto 0px 0px !important;
+  
+  // }
+  
+  .react-3d-carousel .slider-container .slider-content {
+  
+      // position: absolute;
+      // z-index: 0;
+      // left: 0;
+      // top: 0;
+      width: 700px !important;
+      // transition: z-index 0ms 250ms;
+      // background-color: #ffffff00 !important;
+  
+  }
+
   .img1{
     height: 500px;
     width: 700px;
-    background-color: transparent;
+    
   }
   
   .img2{
     height: 500px;
     width: 700px;
+    
   }
   
   .img3{
     height: 500px;
     width: 700px;
+    
   }
   
   .img4{
     height: 500px;
     width: 700px;
+    
   }
   
   .img5{
     height: 500px;
     width: 700px;
+    
   }
   
   .img6{
     height: 500px;
     width: 700px;
+    
   }
   
   .img7{
     height: 500px;
     width: 700px;
+    
   }
   
   .img8{
     height: 500px;
     width: 700px;
+    
   }
   
   .img9{
     height: 500px;
     width: 700px;
+    
   }
   
   .img10{
     height: 500px;
     width: 700px;
+    
   }
 }

@@ -51,7 +51,10 @@ export function Navbar() {
                         <a href="https://www.paypal.com/paypalme/FondationOmega?fbclid=PAAabLbCIHkvMcHMaefyxmYCwxof1iyTtM3ijEMrmttAK8Nu1JqID18iT1440">Dons</a>
                     </li>
                     <li>
-                        <a href="/Contacts">Contacts</a>
+                        <a href="/Contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="/Articles">Articles</a>
                     </li>
                 </div>
             </ul>
