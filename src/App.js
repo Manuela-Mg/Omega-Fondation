@@ -7,6 +7,8 @@ import Home from "./Components/Home";
 import Donations from "./Components/Donate";
 import Galeria from "./Components/SubComp/Galeria";
 import Pellicule from "./Components/SubComp/Pellicule";
+import OrphPellicule from "./Components/SubComp/OrphPellicule";
+
 import About from "./Components/About";
 import Articles from "./Components/Articles";
 
@@ -27,7 +29,9 @@ function App() {
 
         <Route  path="/Galerie" component={Galeria} />
 
-        <Route  path="/Pellicule" component={Pellicule}/>
+        <Route  path="/Pellicule-Hopital" component={Pellicule}/>
+
+        <Route  path="/Pellicule-Orphelinat" component={OrphPellicule}/>
       </Switch>
     </Router>
     </>

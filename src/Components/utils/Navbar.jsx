@@ -13,6 +13,8 @@ export function Navbar() {
             setNavbar(false);
         }
     };
+
+
     window.addEventListener("scroll", changeBackground);
 
     return (
@@ -48,7 +50,7 @@ export function Navbar() {
                         <a className="active" href="/">Accueil</a>
                     </li>
                     <li>
-                        <a href="https://www.paypal.com/paypalme/FondationOmega?fbclid=PAAabLbCIHkvMcHMaefyxmYCwxof1iyTtM3ijEMrmttAK8Nu1JqID18iT1440">Dons</a>
+                        <a href="https://www.paypal.me/OmegAssociation?locale.x=fr_FR">Dons</a>
                     </li>
                     <li>
                         <a href="/Contact">Contact</a>

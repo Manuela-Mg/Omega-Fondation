@@ -269,7 +269,9 @@
     bottom: 0;
     width: 100%;
     height: 1230px;
-    background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #432b22aa 80%, #462e22 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(67, 43, 34, 0.6667) 80%, #462e22 100%);
+
+    // background: linear-gradient(to bottom, #FFFFFF00 0%, #FFFFFF00 50%, #432b22aa 80%, #462e22 100%);
 }
 
 .backmob{

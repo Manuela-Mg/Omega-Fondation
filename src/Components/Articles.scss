@@ -1,0 +1,420 @@
+.articles-box{
+    position: absolute;
+    background-color: #F4F1EB;
+    height: 100vh;
+    z-index: 34;
+    
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+
+    //  overflow-y: scroll;
+
+}
+
+
+@font-face {
+    font-family: marcha;
+    src: url("../../public/afont/marcha/Marcha.ttf");
+}
+
+
+@font-face {
+    font-family: albra;
+    src: url("../../public/font/albra/ALBRA.ttf");
+}
+
+
+.top-box {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #4A2E1E;
+
+    h1 {
+        // position: absolute;
+        // width: 3216px;
+        // height: 672px;
+        font-family: marcha;
+        font-size: 2.4em;
+
+        font-style: normal;
+        font-weight: 400;
+
+        /* or 7% */
+
+        color: #967969;
+
+        mix-blend-mode: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+
+    }
+
+    p {
+        margin-top: -4px;
+        font-size: 0.9em;
+        line-height: 18px;
+        
+ 
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        color: #AF9A8E;
+        
+        mix-blend-mode: normal;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        
+        
+    }
+}
+
+.blog-box {
+
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+   
+
+}
+
+.appear-box {
+    display: none;
+}
+
+
+.box-ctr{
+    // background-color: #F4F1EB;
+    height: auto;
+    // max-height: 80vh;
+    width: 100%; 
+    max-width: 830px; 
+    margin-bottom: 3%; 
+    overflow: visible;
+    position: relative;
+    padding-bottom: 20px;
+    text-align: center;
+
+
+    .inline-box{
+        height: 380px;
+        padding: 10px;
+        width: 100%;
+        // margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        z-index: 2444;
+
+        border: 1px solid #4A2E1E;
+        border-radius: 123px;
+
+    @media screen and (max-width: 339px){
+        span {
+            
+            position: absolute;
+            top: 0;
+            left: 77%;
+            // top: 0;
+            // right: 0;
+            // transform: translate(-50%, -50%);
+            transform: translateX(50%);
+
+            font-size: 1.5rem;
+            margin-top: 20px;
+            // margin-top: 10px;
+            // top: 0;
+            // right: 30px;
+            // font-size: 2em;
+            // color: #4A2E1E;
+        }
+    }
+
+    }
+
+    @media screen and (max-width: 899px){
+    
+    .orph-box{
+        background-color: rgb(116, 82, 32);
+        // z-index: 3333;
+        height: inherit;
+        width: 100%;
+
+        background-image: url('../../public/orph/IMG_9724.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 123px;
+
+
+    }
+
+    .hosto-box{
+        height: inherit;
+        width: 100%;
+        border-radius: 90px;
+
+        background-Image: url('../../public/pics/hosto/post.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 123px;
+
+    }
+}
+
+    @media screen and (min-width: 340px) and (max-width: 705px) {
+        // .inline-box {
+        //     height: 410px;
+
+        // }
+        // width: calc(100% - 60px); 
+        width: 250px;
+        // font-size: 45px;
+
+        .inline-box{
+         
+    
+            span {
+                position: absolute;
+                margin-top: 10px;
+                top: 0;
+                right: 35px;
+                font-size: 2em;
+                color: #4A2E1E;
+                // margin-right: 0;
+            }
+    
+        }
+
+
+    }
+
+    .open-butt {
+        
+        p {
+            margin-top: 5px;
+            color: #664b31;
+        }
+
+        a:hover {
+
+            p {
+                font-weight: bold;
+                color: #b7a095;
+            }
+
+            span {
+                color: #b7a095;
+            }
+        }
+        
+
+
+        .inner-text {
+            color: #8a6a4d;
+        }
+        span {
+            // position: absolute;
+            // width: 70px;
+            // height: 86px;
+
+            // font-family: 'Rozha One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2em;
+            // line-height: 40px;
+
+            // display: flex;
+
+            color: #503f2c;
+        }
+
+        h3 {
+            color: #664b31;
+            font-family: actu;
+        }
+
+      
+    }
+
+    @media screen and (min-width: 706px) {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .inline-box{
+            width: 250px;
+            margin-right: 70px;
+
+            span{
+                position: absolute;
+                margin-top: 10px;
+                top: 0;
+                // transform: translateX(0);
+
+                // right: 85%;
+                font-size: 2em;
+                color: #4A2E1E;
+                margin-right: -155px;
+               
+            }
+
+        }
+        .open-butt{
+            width: 250px;
+
+            text-align: left;
+        }
+    }
+    
+
+
+}
+
+
+.box-ctr:nth-child(1)
+{
+    margin-bottom: 50px;
+
+}
+
+// .boxes-box{
+//     display: none;
+// }
+
+
+@media screen and (min-width: 900px) {
+
+    .boxes-box{
+        display: block;
+        // background: #AF9A8E;
+        display: flex;
+        margin-right: 30%;
+        // flex-direction: column;
+        // justify-content: center;
+        @media screen and (min-width: 1200px) {
+            margin-right: 32%;
+
+        }
+    }
+
+    .appear-box{
+        position: absolute;
+        display: block;
+        background-color: #4A2E1E;
+        // z-index: 3333;
+        height: 380px;
+        width: 250px;
+        margin-left: 170px;
+
+        // background-image: url('../../public/orph/IMG_9724.png');
+  
+        border-radius: 123px;
+
+        background-image: url('../../public/orph/IMG_9724.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .appear-box2{
+        position: absolute;
+        display: block;
+        background-color: #4A2E1E;
+        height: 380px;
+        width: 250px;
+        margin-left: 170px;
+
+  
+        border-radius: 123px;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../public/pics/hosto/post.png');
+
+    }
+
+    .orph-box{
+        border-radius: 123px;
+
+        // z-index: 3333;
+        height: inherit;
+        width: 100%;
+        border: 1px solid #FFF6E5;
+        border-radius: 123px;
+        background-image: none;
+        
+
+    }
+
+    .hosto-box{
+        height: inherit;
+        width: 100%;
+        border-radius: 90px;
+        border: 1px solid #FFF6E5;
+        border-radius: 123px;
+        background-Image: none;
+
+        border-radius: 123px;
+
+    }
+
+    .box-ctr {
+        .inline-box{
+            border: 0;
+            background-color: #4A2E1E;
+            span{
+                position: absolute;
+                top: auto;
+
+                font-size: 2em;
+                color: #FFF6E5;
+                margin-right: 0;
+            
+            }
+        }
+
+        .open-butt {
+
+            @media screen and (min-width: 1200px) {
+                h3 {
+                    font-size: 1.4em;
+                }
+                p {
+                    font-size: 1.25em;
+                }
+                .inner-text {
+                    font-size: 1.1em;
+
+                }
+            }
+        }
+    }
+
+
+
+    
+}
+
+

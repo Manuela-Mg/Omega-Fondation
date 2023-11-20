@@ -203,7 +203,7 @@
         h2{
             font-family: kari;
             font-size: 11.5vw;
-            color: #c6bcaf;
+            color: #d1c8bc;
 
             @media screen and (min-width: 380px) {
                 font-size: 45px;
@@ -219,7 +219,7 @@
         display: flex;
         justify-content: left;
         h2{
-            color: #c6bcaf;
+            color: #d1c8bc;
             font-family: kari;
             font-size: 11.5vw;
 
@@ -232,18 +232,24 @@
 
     .scd-textbox{
         z-index: 34;
-        margin-top: -138px;
-        font-size: 13.5px;
+        font-size: 13.8px;
         text-align: center;
-        
+        max-width: 225px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-top: -145px;
+
         // margin-top: -470px;
         color: #fff8eb;
         span{
-            font-size: 15px;
+            // width: 50px;
+            font-size: 17px;
             font-family: actu;
             font-style: italic;
+            word-wrap: break-word;
         }
         p{
+            
             color: #f4ebdbcf;
         }
         .fstar{
@@ -251,16 +257,19 @@
         }
         @media screen and (min-width: 500px) {
             position: absolute;
-            width: 150px;
-            right: 65px;
+            width: 160px;
+            right: 60px;
+
             span{
-                font-size: 14.5px;
+                font-size: 15px;
             }
         }
         @media screen and (min-width: 680px) {
-            right: 100px;
+            width: 220px;
+
+            right: 45px;
             span{
-                font-size: 15px;
+                font-size: 17px;
             }
         }
         @media screen and (min-width: 770px) {
@@ -304,13 +313,17 @@
         padding-bottom: 10px;
         overflow: hidden;
 
+        @media screen and (min-width: 420px) {
+            margin-bottom: 30px; 
+
+        }
         .circular-line{
             background-color: #f4ebdb26;
             margin-top: 60px;
             margin-bottom: 20px; 
             margin-left: auto;
             margin-right: auto;
-            height: 145px;
+            height: 160px;
             width: 74%;
             border-radius: 50%;
             border-style: solid;
@@ -325,18 +338,20 @@
             @media screen and (min-width: 348px) {
                 width: 270px;
             }
+           
+
         }
         .scd-line{
-            margin-top: -170px;
+            margin-top: -185px;
             margin-left: auto;
             margin-right: auto;
-            height: 155px;
-            width: 78%;
+            height: 170px;
+            width: 79%;
             border-radius: 50%;
             border-style: solid;
             border-width: 1px;
             border-color:#ffe9de ;
-            transform: rotate3d(1, 1, 1, 35deg);
+            transform: rotate3d(1, 1, 1,35deg);
             // animation: rotation 4s infinite linear;
             
             @media screen and (min-width: 348px) {
@@ -352,7 +367,7 @@
             .scd-line{
                 width: 215px;
                 margin-right: 28px;
-                transform: rotate3d(1, 1, 1, 29deg);
+                transform: rotate3d(1, 1, 1, 34deg);
             }
         }
         @media screen and (min-width: 680px) {
@@ -381,7 +396,7 @@
         height: 350px;
         width: 75%;
         border-radius: 50ch;
-        background-Image: url("../../../public/pics/hosto/post.jpg");
+        background-Image: url("../../../public/orph/new.png");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -399,11 +414,13 @@
             width: 300px;
         }
         @media screen and (min-width: 770px) {
+            // margin-left: 3%;
             margin-top: -280px;
             width: 280px;
             // visibility: hidden;
         }
         @media screen and (min-width: 1250px) {
+            // margin-left: 4%;
             margin-top: -300px;
             height: 450px;
             width: 310px;
@@ -436,7 +453,7 @@
             margin-top: -70px;
             // visibility: hidden;
             a{
-                font-size: 1.1rem;
+                font-size: 1.3rem;
             }
         }
     }
@@ -445,13 +462,15 @@
         // position: absolute;
         // margin-top: 175px;
         border-style: solid;
-        border-width: 1px;
+        margin-top: 10px;
+        margin-left: 2px;
+        border-width: 2px;
         border-color:#d1bbaf ;
         background-color: transparent;
         // z-index: 23;
         border-radius: 50%;
-        height: 65px;
-        width: 70px;
+        height: 75px;
+        width: 90px;
         transform: rotate3d(1, 1, 1, -165deg);
 
     }
@@ -459,9 +478,19 @@
     a{
         // margin-top: 178px;
         // position: absolute;
-        margin-top: -60px;
+        margin-top: -75px;
         z-index: 213;
         color: #e9d6ce;
+    }
+
+    @media screen and (max-width: 770px) {
+        .see-box a{
+            font-size: 1.2rem;
+            margin-left: 5px;
+        }
+    }
+    @media screen and (min-width: 850px) {
+
     }
 
     .scd-ctr{
@@ -481,7 +510,7 @@
             margin-bottom: 20px; 
             margin-left: 25px;
             margin-right: auto;
-            height: 130px;
+            height: 150px;
             // width: 54%;
             border-radius: 50%;
             border-style: solid;
@@ -494,14 +523,14 @@
             
             
             @media screen and (min-width: 770px) {
-                width: 200px;
+                width: 205px;
             }
         }
         .scd-line2{
-            margin-top: -150px;
+            margin-top: -170px;
             margin-left: 20px;
             margin-right: auto;
-            height: 130px;
+            height: 150px;
             width: 78%;
             border-radius: 50%;
             border-style: solid;
@@ -519,7 +548,7 @@
             z-index: 25;
             width: 10px;
             margin-left: auto;
-            margin-right: 195px;
+            margin-right: 210px;
             height: 285px;
             border-style: solid;
             border-width: 0 0 0 1px;
@@ -527,16 +556,16 @@
         }
         .scd-textbox2{
             z-index: 34;
-            margin-top: -120px;
+            margin-top: -128px;
             text-align: center;
             position: absolute;
             width: 150px;
-            left: 50px;
-            font-size: 0.75rem;
+            left: 48px;
+            // font-size: 0.8rem;
             // margin-top: -470px;
             color: #fff8eb;
             span{
-                font-size: 13.5px;
+                font-size: 15px;
                 font-family: actu;
                 font-style: italic;
             }
@@ -552,17 +581,17 @@
 
         .host-text{
             z-index: 34;
-            margin-top: -252px;
+            margin-top: -270px;
             // text-align: center;
             position: absolute;
             width: 150px;
-            right: 35px;
+            right: 45px;
             font-size: 0.85rem;
             // margin-top: -470px;
             color: #fff8eb;
             span{
-                font-size: 15px;
-                font-family: actu;
+                font-size: 16.7px;
+                font-family: prog;
                 font-style: italic;
             }
             p{
@@ -586,21 +615,21 @@
                 margin-bottom: 20px; 
                 margin-left: 25px;
                 margin-right: auto;
-                height: 145px;
+                height: 165px;
                 transform: rotate3d(1, 1, 1, 25deg);
                 
                 
-                @media screen and (min-width: 770px) {
-                    width: 200px;
-                }
+                // @media screen and (min-width: 770px) {
+                    width: 220px;
+                // }
             }
 
             .scd-line2{
-                margin-top: -165px;
-                margin-left: 20px;
+                margin-top: -189px;
+                margin-left: 25px;
                 margin-right: auto;
-                height: 145px;
-                width: 210px;
+                height: 170px;
+                width: 228px;
                 transform: rotate3d(1, 1, 1, 38deg);
             }
 
@@ -608,11 +637,12 @@
                 margin-top: -220px;
             }
             .scd-textbox2{
-                margin-top: -127px;
+                margin-top: -140px;
                 font-size: 0.8rem;
-                
+                left: 55px;
+
                 span{
-                    font-size: 14px;
+                    font-size: 16px;
                     
                 }
                 .fstar{
@@ -624,43 +654,48 @@
     
             .host-text{
                 z-index: 34;
-                margin-top: -260px;
+                margin-top: -245px;
                 // text-align: center;
                 position: absolute;
                 width: 180px;
-                right: 5px;
+                right: 15px;
                 font-size: 0.87rem;
                 // margin-top: -470px;
                 color: #fff8eb;
                 span{
-                    font-size: 16.5px;
+                    font-size: 16.9px;
                 }
     
             }
         }
         @media screen and (min-width: 1250px) {
             width: 1000px;
+            overflow: visible; 
+
+            // padding-right: 10px;
             .circular-line2{
-                height: 150px;
+                height: 185px;
+                width: 245px;
                 transform: rotate3d(1, 1, 1, 25deg);
             }
 
             .scd-line2{
-                margin-top: -170px;
-                margin-left: 17px;
-                height: 150px;
-                width: 215px;
+                margin-top: -210px;
+                margin-left: 25px;
+                height: 195px;
+                width: 245px;
             }
 
             .straight{
                 margin-top: -220px;
             }
             .scd-textbox2{
-                margin-top: -129px;
+                margin-top: -155px;
                 font-size: 0.87rem;
-                
+                left: 65px;
+
                 span{
-                    font-size: 15px;
+                    font-size: 16.7px;
                     
                 }
     
@@ -668,16 +703,16 @@
     
             .host-text{
                 z-index: 34;
-                margin-top: -274px;
+                margin-top: -257px;
                 // text-align: center;
                 position: absolute;
                 width: 190px;
-                right: -5px;
+                right: 5px;
                 font-size: 0.98rem;
                 // margin-top: -470px;
                 color: #fff8eb;
                 span{
-                    font-size: 17px;
+                    font-size: 17.8px;
                 }
     
             }
@@ -686,12 +721,12 @@
         @media screen and (min-width: 1450px) {
             width: 1100px;
             .circular-line2{
-                height: 160px;
+                height: 180px;
             }
 
             .scd-line2{
-                height: 160px;
-                margin-top: -180px;
+                height: 190px;
+                margin-top: -205px;
             }
 
             .straight{
@@ -706,11 +741,12 @@
                 border-color: rgb(203, 190, 184);
             }
             .scd-textbox2{
-                margin-top: -140px;
+                margin-top: -163px;
+                left: 70px;
                 font-size: 0.89rem;
                 
                 span{
-                    font-size: 15.7px;
+                    font-size: 17.08px;
                     
                 }
     
@@ -718,12 +754,12 @@
     
             .host-text{
                 z-index: 34;
-                margin-top: -270px;
+                margin-top: -280px;
                 font-size: 1rem;
-                width: 190px;
+                width: 185px;
                 right: -7px;
                 span{
-                    font-size: 19px;
+                    font-size: 18px;
                 }
     
             }

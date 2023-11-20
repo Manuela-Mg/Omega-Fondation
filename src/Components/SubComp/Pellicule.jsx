@@ -215,7 +215,7 @@ const Pellicule = () => {
           <p>M E G A</p>
           </div>
           <div className="rec-box" style={{ textAlign: "center" }}>
-            <h2 className="h-text">Activités Récentes</h2>
+            <h2 className="h-text">VISITE et DISTRIBUTION DE CADEAUX</h2>
             
             <div style={{
               padding: "0 30px"
@@ -249,12 +249,25 @@ const Pellicule = () => {
               />
             </div>
             <div className="text-pell">
-              <h3>Hôpital <span>Armand Trousseau</span></h3>
-              <p>centre de référence, il est souvent labellisé
-              <br></br>au titre des maladies rares.  Outre les maladies neurologiques et les handicaps,
-              <br></br>la prise en charge des enfants victimes de mauvais traitements
-              <br></br>est aussi une orientation à laquelle il attache beaucoup d’importance.
-              </p>
+              <div className="textp-ctr">
+                <h3>Hôpital <span style={
+                  {
+                    marginLeft : "8px",
+                  }
+                }
+                > Armand Trousseau</span></h3>
+                <p>Centre de référence, il est souvent labellisé
+                au titre des maladies rares.  
+                <br></br>Outre les maladies neurologiques et les handicaps,la prise en charge des enfants victimes de mauvais traitements
+                est aussi une orientation à laquelle il attache beaucoup d’importance.
+
+                <br /><br />Dans un élan de compassion, l'équipe a organisé une distribution spéciale de cadeaux et de jouets pour apporter de <span>la joie</span> aux patients, en particulier aux enfants qui font face à des défis de santé.
+
+                <br /><br />Chaque sourire suscité par les cadeaux offerts est une étincelle d'espoir dans le cœur de ces petites âmes courageuses. Cet acte de gentillesse va bien au-delà de la simple distribution matérielle ; il représente <span>l'amour incommensurable de Dieu</span> manifesté à travers les actions de ceux qui choisissent de servir et d'apporter du réconfort.
+
+                <br /><br />Ces moments partagés à l'hôpital ne sont pas seulement des distributions de biens tangibles, mais des occasions d'exprimer un amour qui transcende les circonstances. <span>L'amour de Dieu</span> se manifeste dans chaque cadeau offert, chaque sourire échangé et chaque moment de réconfort partagé.
+                </p>
+                </div>
             </div>
 
           </div>

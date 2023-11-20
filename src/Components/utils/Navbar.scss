@@ -49,15 +49,34 @@
 }
 
 .navbar.active {
-  backdrop-filter: blur(10px);
-  background: #462e2234;
   box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.222);
   transition: all .5s;
+  overflow: visible;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: inherit;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  // backdrop-filter: blur(20px);
+  // -webkit-backdrop-filter: blur(20px);
 
   .brand-name{
     color: rgb(255, 250, 244);
   }
 }
+
+// .navbar.active  ul{
+//   backdrop-filter: blur(50px);
+//   -webkit-backdrop-filter: blur(50px);
+// }
 
 .navbar ul{
   float: right;
@@ -137,16 +156,17 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    // background: #8462543a;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    opacity: 0.9;
     display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
   }
 
   .navbar ul li{
@@ -163,6 +183,10 @@
 
   .navigation-menu.expanded{
     left: 0;
+    // background: #8e695675;
+
+    background: #513a28bb;
+    backdrop-filter: blur(30px);
   }
 
 }

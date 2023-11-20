@@ -69,7 +69,7 @@ const Home = () => {
                 <p>Donne de Toi avec Nous,<br></br>
                     Pour le peuple et par le Peuple.
                 </p>
-                <a href="https://www.paypal.com/paypalme/FondationOmega?fbclid=PAAabLbCIHkvMcHMaefyxmYCwxof1iyTtM3ijEMrmttAK8Nu1JqID18iT1440">Je donne!</a>
+                <a href="https://www.paypal.me/OmegAssociation?locale.x=fr_FR">Je donne!</a>
               </div>
             </div>
 
