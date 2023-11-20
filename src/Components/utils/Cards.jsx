@@ -1,7 +1,7 @@
 import React from "react";
 import './Cards.scss';
-import './FinalCards.scss';
 import './CardsOrdi.scss';
+import './FinalCards.scss';
 
 export function Cards() {
     window.addEventListener("scroll", slideUp);
@@ -122,7 +122,7 @@ export function Cards() {
                         comme nous souhaiterions être aidés.<br></br>
                         Vous souhaitez participer?<br></br>
                     </p>
-                    <a href="/Contacts">Rejoignez nous!</a>
+                    <a href="/Contact">Rejoignez nous!</a>
                 </div>
             </button> 
         </section>
@@ -162,7 +162,7 @@ export function Cards() {
                                 comme nous souhaiterions être aidés.<br></br>
                                 Vous souhaitez participer?<br></br>
                             </p>
-                            <a href="/Contacts">Rejoignez nous!</a>
+                            <a href="/Contact">Rejoignez nous!</a>
                         </div>
                     </button>
                 </div>
@@ -217,7 +217,7 @@ export function Cards() {
                         comme nous souhaiterions être aidés.<br></br>
                         Vous souhaitez participer?<br></br>
                     </p>
-                    <a href="/Contacts">Rejoignez nous!</a>
+                    <a href="/Contact">Rejoignez nous!</a>
                 </div>
             </button>
         
