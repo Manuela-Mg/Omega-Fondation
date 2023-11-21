@@ -77,6 +77,18 @@
     }
 }
 
+.see p{
+    // background-color: #AF9A8E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span{
+       margin-top: -13.5px;
+    }
+
+}
+
 .blog-box {
 
     position: absolute;

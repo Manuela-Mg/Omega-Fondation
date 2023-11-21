@@ -38,7 +38,7 @@ const Articles = () => {
                             nous avons eu l'occasion de nous rendre
                             à Brazzaville pour des oeuvres...
                             </p>
-                            <a href="/Pellicule-Orphelinat">
+                            <a href="/Pellicule-Orphelinat" className="see">
                                 <p>EXPLOREZ <span>→</span></p>
                             </a>
                             

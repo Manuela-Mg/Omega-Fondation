@@ -104,7 +104,7 @@ export function Cards() {
                     <h3>En Mission</h3>
                     <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
                         <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                        <br></br>Mais plus important, nous offrons de notre personne.
+                        <br></br>Mais le plus important, nous offrons de notre personne.
                     </p>
                 </div>
             </button>
@@ -179,7 +179,7 @@ export function Cards() {
                             <h3>En Mission</h3>
                             <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
                                 <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                                <br></br>Mais plus important, nous offrons de notre personne.
+                                <br></br>Mais le plus important, nous offrons de notre personne.
                             </p>
                         </div>
                     </button>
@@ -232,7 +232,7 @@ export function Cards() {
                     <h3>En Mission</h3>
                     <p>Apporter de l'espoir à ceux qui ne pensent plus en avoir.
                         <br></br>Grâce à vos dons, nous donnons des vivres, et plus.
-                        <br></br>Mais plus important, nous offrons de notre personne.
+                        <br></br>Mais le plus important, nous offrons de notre personne.
                     </p>
                 </div>
             </button>

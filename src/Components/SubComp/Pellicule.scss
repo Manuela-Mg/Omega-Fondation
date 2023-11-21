@@ -56,6 +56,12 @@ a.next {
   visibility: hidden !important;
 }
 
+@media screen and (min-width: 770px) {
+  .text-pell {
+      visibility:visible !important;
+  }
+}
+
 
 @media screen and (min-width: 500px) and (max-width: 770px) {
   .box div:nth-child(1){

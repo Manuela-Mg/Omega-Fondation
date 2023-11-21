@@ -145,9 +145,14 @@ const Pellicule = () => {
                 Elle s’occupe, avec l’aide de 5 autres encadrants, d’une trentaine d’enfants âgés de 0 à 15 ans.
 
                 <br /><br />Au delà des dons matériels et alimentaires <span>(Ventilateur, huile, riz, sardine, couche pour enfants, ballons de foot etc..) </span>qui ont pu être fait, c’est le don de l’amour que nous avons voulu leurs transmettre, leurs faire ressentir qu’ils ne sont pas oubliés, que chacune de leurs vies est importantes, car elles le sont.
-                Ces temps d’échanges, de jeux et de rigolades ont été fréquent lors de nos visites que vous pourrez retrouver sous forme de vlog qui sort le vendredi 12 Mai 2023 sur notre Instagram <span>@OmegaFondation.</span>
+                Ces temps d’échanges, de jeux et de rigolades ont été fréquent lors de nos visites que vous pourrez retrouver sous forme de vlog qui sort le vendredi 12 Mai 2023 sur notre Instagram <a href="https://www.instagram.com/omegasso_/"
+                  style={{
+                    color:'#5A3E34',
+                    fontStyle: 'italic',
+                  }}
+                ><span>@OmegaAsso_.</span></a>
 
-                <br /><br />Nous rendons d’excellente actions de grâce à Dieu
+                <br /><br />Nous rendons d’excellentes actions de grâce à Dieu.
                 </p>
 
               </div>
