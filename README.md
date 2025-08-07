@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Omega Fondation
 
 This project was done for an association taking care of orphans and people in need.
 
